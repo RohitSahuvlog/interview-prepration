@@ -169,6 +169,13 @@
 // What are synthetic events in React ? and use?
 // Synthetic events are the objects which act as a cross-browser wrapper around the browser’s native event. They combine the behavior of different browsers into one API. This is done to make sure that the events show consistent properties across different browsers.
 
+// example: Sure! Synthetic events in React are like a helpful middleman between your code and the browser's built-in events. They make sure everything works the same way across different browsers, so you don't have to worry about browser-specific quirks.
+
+// Why Use Synthetic Events ?
+// Consistency : They make sure events behave the same way no matter which browser you're using.
+// Performance: They are designed to be efficient, reusing event objects to save memory.
+// Ease of Use: They provide a simple and uniform way to handle events in your React applications.
+
 // React uses the event delegation technique to listen to events at the root level and then it delegates the responsibility of handling the events to the respective components. This is done to improve the performance of the application.
 
 
@@ -204,10 +211,13 @@
 
 // 6. What are React components ?
 // ans = React components are the building blocks of a React application. They are reusable UI elements that encapsulate the logic and presentation of a part of the user interface. React components can be either functional components or class components. Functional components are simple functions that take props as an argument and return JSX, while class components are ES6 classes that extend from React.Component and can have state and lifecycle methods.
+// remember key words : reusable UI elements, encapsulate the logic and presentation, functional components, class components, props, JSX, state, lifecycle methods.
 
 
 // 7. Differentiate between a Class component and a Functional component.
 // ans = Class components are ES6 classes that extend from React.Component and can have state and lifecycle methods. They are used for more complex components that require state management and lifecycle methods. Functional components are simple functions that take props as an argument and return JSX. They are used for presentational components that do not require state or lifecycle methods.
+
+// remember key words : Class components, ES6 classes, React.Component, state, lifecycle methods, Functional components, simple functions, props, JSX, presentational components.
 
 
 // 8. What is the difference between state and props in React ?
@@ -243,11 +253,24 @@
 
 
 // 16. How does automatic batching work in React 18 ?
+// ans : Automatic batching is a new feature in React 18 that allows React to batch multiple state updates into a single render cycle. It automatically batches state updates that occur within the same event loop to reduce the number of re-renders and improve performance. Automatic batching helps to optimize rendering performance and reduce unnecessary updates in React applications.
+
 // 17. What is the useTransition hook, and how does it work ?
+// ans = The useTransition hook is a new feature in React 18 that allows you to control the loading state of asynchronous data in React applications. It returns a transition state that indicates whether the data is still loading or has been loaded. You can use the useTransition hook to show loading indicators and improve the user experience when fetching data asynchronously.
+
 // 18. Explain the working of useDeferredValue in React 18.
+// ans = The useDeferredValue hook is a new feature in React 18 that allows you to defer the rendering of non-critical data in React applications. It returns a deferred value that React can prioritize for rendering later. You can use the useDeferredValue hook to improve performance by deferring the rendering of less important data until after the critical data has been rendered.
+
 // 19. What is Suspense in React, and how does it work ?
+// ans = Suspense is a feature in React that allows components to suspend rendering while waiting for asynchronous data to load. Suspense helps to manage loading states and handle data fetching in React applications. It allows you to show loading indicators, error boundaries, and fallback UIs while fetching data asynchronously.
+
 // 20. How has React 18 improved Suspense ?
+// ans = React 18 has improved Suspense by introducing new features like useTransition, startTransition, and useDeferredValue. These features allow you to control the loading state of asynchronous data, defer rendering of non-critical data, and improve the user experience when fetching data in React applications. React 18 also includes enhancements to Suspense for server-side rendering and React Server Components.
+
 // 21. What is the new startTransition function in React 18 ?
+// ans = The startTransition function is a new feature in React 18 that allows you to start a transition to update the UI in React applications. It lets you defer rendering updates until after the transition has completed, improving performance and responsiveness. You can use the startTransition function to prioritize user interactions and ensure smooth and interactive user experiences in React applications.
+
+
 // 22. What is the difference between useTransition and startTransition ?
 // 23. How do you use the Concurrent Features introduced in React 18 ?
 // 24. How does React 18 enhance server - side rendering(SSR) ?
