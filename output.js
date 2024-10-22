@@ -40,7 +40,7 @@ https://plainenglish.io/blog/50-javascript-output-questions
 // Answer: 12.3
 
 // Question: What is the value of Math.max([2,3,4,5]);
-// Answer: NaN
+// Answer: NaN // math.max(1,2,3,4)
 
 // Question: typeof(NaN)
 // Anwser:"number"

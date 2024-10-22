@@ -187,7 +187,7 @@
 // The Virtual DOM is a lightweight copy of the Real DOM that is maintained by React. It is a JavaScript representation of the Real DOM that React uses to optimize rendering performance. The Virtual DOM is fast and efficient because it allows React to batch updates and only update the parts of the DOM that have changed.
 
 
-// 3. What are the key features of React ?
+// 3.What are the key features of React?
 // ans = React is a JavaScript library for building user interfaces. It has several key features that make it popular among developers:
 
 // Declarative: React allows you to create interactive UIs using a declarative syntax that makes the code more predictable and easier to debug.
@@ -270,146 +270,286 @@
 // 21. What is the new startTransition function in React 18 ?
 // ans = The startTransition function is a new feature in React 18 that allows you to start a transition to update the UI in React applications. It lets you defer rendering updates until after the transition has completed, improving performance and responsiveness. You can use the startTransition function to prioritize user interactions and ensure smooth and interactive user experiences in React applications.
 
+// import { startTransition } from 'react';
+
+// startTransition(() => {
+//     // Update state or perform an operation that can be deferred
+// });
+
 
 // 22. What is the difference between useTransition and startTransition ?
+// ans = The useTransition hook and startTransition function are new features in React 18 that allow you to control the loading state of asynchronous data and defer rendering updates in React applications.
+
+// The useTransition hook returns a transition state that indicates whether the data is still loading or has been loaded. It allows you to show loading indicators and improve the user experience when fetching data asynchronously.
+
+// The startTransition function allows you to start a transition to update the UI in React applications. It lets you defer rendering updates until after the transition has completed, improving performance and responsiveness. You can use the startTransition function to prioritize user interactions and ensure smooth and interactive user experiences in React applications.
+
+
 // 23. How do you use the Concurrent Features introduced in React 18 ?
+// ans = To use the concurrent features introduced in React 18, you can update your React application to the latest version of React and start using the new APIs and hooks like useTransition, startTransition, useDeferredValue, and improved Suspense. You can use these features to control the loading state of asynchronous data, defer rendering updates, and improve the user experience in React applications.
+
+// import { useTransition, startTransition, useDeferredValue } from 'react';
+
+// const [isPending, startTransition] = useTransition();
+// const deferredValue = useDeferredValue(data);
+
 // 24. How does React 18 enhance server - side rendering(SSR) ?
+// ans = React 18 enhances server-side rendering (SSR) by improving the performance and scalability of React applications. It introduces new features like React Server Components and improved Suspense for server-side rendering. These features allow you to render components on the server and deliver faster and more interactive user experiences in React applications.
+
+// remember keys words : server-side rendering, performance, scalability, React Server Components, improved Suspense, faster, interactive user experiences.
+
+
 // 25. What is React Server Components, and how does it work with React 18 ?
+// ans = React Server Components are a new feature in React 18 that allows you to render components on the server and send only the necessary data to the client. Server Components help to improve performance and reduce the amount of data sent over the network by rendering components on the server and hydrating them on the client. This allows you to deliver faster and more interactive user experiences in React applications.
+
+// remember key words : React Server Components, render components on the server, reduce data sent over the network, hydrate components on the client, faster, interactive user experiences.
+
 // 26. What role does the concurrentMode flag play in React 18 ?
+// ans = The concurrentMode flag is a new feature in React 18 that allows you to enable concurrent rendering in React applications. It enables React to work on multiple tasks concurrently and prioritize user interactions to ensure smooth and interactive user experiences. The concurrentMode flag helps to improve performance and responsiveness in React applications.
+
+// remember key words : concurrentMode flag, enable concurrent rendering, multiple tasks concurrently, prioritize user interactions, smooth, interactive user experiences.
+
 // 27. Explain the React lifecycle methods in detail.
+// ans = React lifecycle methods are special methods that are called at different stages of a component's life cycle. They allow you to perform actions like initializing state, updating the UI, and cleaning up resources. The React lifecycle methods include:
+
+// constructor: The constructor method is called when a component is initialized and allows you to set the initial state and bind event handlers.
+
+// componentDidMount: The componentDidMount method is called after a component has been rendered to the DOM and allows you to perform side effects like data fetching and subscriptions.
+
+// componentDidUpdate: The componentDidUpdate method is called after a component has been updated and allows you to perform side effects when the component re-renders.
+
+// componentWillUnmount: The componentWillUnmount method is called before a component is removed from the DOM and allows you to clean up resources like event listeners and subscriptions.
+
+// shouldComponentUpdate: The shouldComponentUpdate method is called before a component re-renders and allows you to control whether the component should update based on the new props and state.
+
+// render: The render method is called to render the component's UI and returns the JSX that will be displayed on the screen.
+
+// remember key words : React lifecycle methods, component's life cycle, constructor, componentDidMount, componentDidUpdate, componentWillUnmount, shouldComponentUpdate, render.
+
 // 28. What is React Context API, and when would you use it ?
+// ans = The React Context API is a feature in React that allows you to share data between components without passing props manually. It provides a way to pass data through the component tree without having to pass props down manually at every level. You can use the Context API to manage global state, theme settings, and user preferences in React applications.
+
+// remember key words : React Context API, share data between components, pass data through the component tree, manage global state, theme settings, user preferences.
+
 // 29. What are higher - order components(HOCs) in React ?
+// ans = Higher-Order Components (HOCs) are a pattern in React that allows you to reuse component logic. HOCs are custom functions that accept a component as an argument and return a new component with additional props or behavior. They are a way to share reusable code between components and enhance the functionality of existing components.
+
 // 30. How does React handle forms and controlled components ?
+// ans = React handles forms using controlled components, which are components that manage the form data through state. Controlled components use the value prop to control the input fields and update the state based on user input. This allows you to access and manipulate the form data in React components.
+
 // 31. What are uncontrolled components in React ?
+// ans = Uncontrolled components are components that manage their own state internally and do not rely on React state management. They use the ref attribute to access the form data directly from the DOM. Uncontrolled components are useful for simple forms and can be more performant than controlled components in certain cases.
+
+
 // 32. What is Prop Drilling, and how can it be avoided ?
+// ans = Prop Drilling is a pattern in React where you pass props down multiple levels of the component tree to access them in nested components. Prop Drilling can lead to complex and hard-to-maintain code. You can avoid Prop Drilling by using React Context API, higher-order components, or custom hooks to share data between components without passing props manually.
+
 // 33. What are React Portals, and when should you use them ?
+// ans = React Portals are a feature in React that allows you to render children into a different part of the DOM. Portals provide a way to render components outside the parent component's DOM hierarchy. You can use Portals to render modal dialogs, tooltips, and other UI elements that need to break out of the parent component's layout.
+
+
 // 34. What is the significance of React’s shouldComponentUpdate method ?
+// ans = The shouldComponentUpdate method is a lifecycle method in React that allows you to control whether a component should re-render based on the new props and state. It returns a boolean value that indicates whether the component should update. You can use the shouldComponentUpdate method to optimize rendering performance by preventing unnecessary re-renders in React components.
+
 // 35. What are Fragments in React ?
+// ans = Fragments are a feature in React that allows you to group multiple elements without adding extra nodes to the DOM. Fragments are a way to return multiple elements from a component without wrapping them in a parent element. They help to keep the DOM structure clean and avoid unnecessary div wrappers in React components.
+
 // 36. Explain the concept of memoization in React using React.memo and useMemo.
+// ans = Memoization is a technique in React that allows you to optimize the performance of functional components by caching the results of expensive computations. React.memo is a higher-order component that memoizes the output of a functional component based on its props. useMemo is a hook that memoizes the result of a function or computation and reuses the cached value when the dependencies have not changed.
+
+// remember key words : Memoization, optimize performance, caching results, React.memo, useMemo.
+
+
 // 37. How do you optimize performance in a React application ?
+// ans = You can optimize performance in a React application by using techniques like code splitting, lazy loading, server-side rendering, caching, and optimizing images and assets. You can also minify and bundle your code, reduce the number of HTTP requests, and use a content delivery network (CDN) to improve loading times.
+
 // 38. What are the rules for using React Hooks ?
+// ans = React Hooks have several rules that you should follow to ensure they work correctly:
+
+// Only call Hooks at the top level of a functional component.
+// Only call Hooks from React function components or custom Hooks.
+// Only call Hooks from within the body of a function component, not from nested functions or conditionals.
+// Only call Hooks from the same component every time you render it.
+// Only call Hooks from custom Hooks, not regular functions.
+// Remember to follow the rules of Hooks to avoid issues like stale closures and unexpected behavior in your React components.
+
+
 // 39. How do you handle errors in React using error boundaries ?
+// ans = Error boundaries are a feature in React that allows you to catch JavaScript errors in components and handle them gracefully. You can use error boundaries to display fallback UIs, log errors, and prevent the entire application from crashing. Error boundaries help to improve the user experience and make your React applications more robust and reliable.
+
 // 40. What is the componentDidCatch() method in React ?
+// ans = The componentDidCatch() method is a lifecycle method in React that allows you to catch JavaScript errors in components and handle them gracefully. It is called when an error occurs during rendering, in lifecycle methods, or in the constructor of a component. You can use componentDidCatch() to display fallback UIs, log errors, and prevent the entire application from crashing.
+
 // 41. What are synthetic events in React ?
+// ans = Synthetic events are the objects which act as a cross-browser wrapper around the browser’s native event. They combine the behavior of different browsers into one API. This is done to make sure that the events show consistent properties across different browsers.
+
 // 42. How can you test a React component ?
+// ans = You can test a React component using tools like Jest, React Testing Library, and Enzyme. You can write unit tests, integration tests, and end-to-end tests to ensure that your components work as expected. You can test the component's rendering, behavior, and interactions with other components to validate its functionality.
+
 // 43. What is the role of Jest in React testing ?
+// ans = Jest is a popular testing framework for JavaScript that is commonly used to test React components. Jest provides a simple and powerful way to write tests for React applications. It includes features like test runners, matchers, and spies to help you write and run tests efficiently. Jest is often used in combination with other testing libraries like React Testing Library and Enzyme to test React components.
+
 // 44. What is the difference between shallow rendering and full rendering in testing ?
+// ans = Shallow rendering and full rendering are two different approaches to testing React components.
+
+// Shallow rendering: Shallow rendering is a testing technique that renders only the component being tested and does not render its child components. It allows you to isolate the component under test and focus on its behavior without rendering the entire component tree.
+
+// Full rendering: Full rendering is a testing technique that renders the entire component tree, including all child components. It allows you to test the component in a more realistic environment and verify its interactions with other components. Full rendering is useful for testing the integration of components and their behavior in the context of the entire application.
+
 // 45. How does one implement lazy loading in React ?
+// ans = Lazy loading is a technique in React that allows you to load components asynchronously when they are needed. You can implement lazy loading using React.lazy and Suspense to dynamically import components and show loading indicators while the components are being loaded. Lazy loading helps to improve the performance of React applications by reducing the initial bundle size and loading time.
+
+
 // 46. How can you test React hooks ?
+// ans = You can test React hooks using tools like Jest and React Testing Library. You can write unit tests to test the behavior of hooks like useState, useEffect, useContext, useReducer, useMemo, useCallback, useRef, and useLayoutEffect. You can simulate different scenarios and test the hook's functionality, side effects, and interactions with other components.
+
+
+
 // 47. How do you handle forms and validations in React ?
+// ans = You can handle forms and validations in React using controlled components, form state management, and form libraries like Formik and React Hook Form. You can use the useState hook to manage form data and the onChange event to update the form state. You can also use form validation libraries like Yup and Joi to validate form data and display error messages to users.
+
 // 48. What is Redux, and how does it relate to React ?
+// ans = Redux is a state management library for JavaScript applications that allows you to manage the state of your application in a predictable and centralized way. Redux is often used with React to manage the global state of a React application and share data between components. Redux provides a single source of truth for the application state and allows you to update the state using actions and reducers.
+
+// remember key words : Redux, state management library, JavaScript applications, predictable, centralized, global state, single source of truth, actions, reducers.
+
 // 49. What are the key principles of Redux ?
+// ans = The key principles of Redux are:
+
+// Single source of truth: Redux stores the entire state of the application in a single object tree, making it easy to manage and update the state.
+
+// State is read-only: The state in Redux is immutable and can only be changed by dispatching actions that describe the state changes.
+
+// Changes are made with pure functions: Reducers in Redux are pure functions that take the current state and an action as arguments and return the new state based on the action.
+
+// remember key words : Redux, single source of truth, state is read-only, immutable, pure functions, reducers.
+
 // 50. What are actions, reducers, and the store in Redux ?
+// ans = Actions, reducers, and the store are key concepts in Redux that are used to manage the state of a React application.
+
+// Actions: Actions are plain JavaScript objects that describe the state changes in the application. They have a type property that describes the type of action and can include additional data to update the state.
+
+// Reducers: Reducers are pure functions that take the current state and an action as arguments and return the new state based on the action. Reducers are responsible for updating the state in response to actions.
+
+// Store: The store is an object that holds the application state and provides methods to update the state using actions and reducers. The store is created using the createStore function from the Redux library and is the single source of truth for the application state.
+
+// remember key words : Actions, reducers, store, Redux, state changes, type property, pure functions, current state, new state, createStore.
+
 // 51. What is the difference between useReducer and Redux ?
+// ans = useReducer is a hook in React that allows you to manage state in functional components using reducers. It is similar to Redux in that it uses reducers to update the state based on actions. However, useReducer is local to a component and does not provide the global state management and middleware features of Redux. Redux is a state management library that provides a centralized store, actions, reducers, and middleware to manage the state of a React application.
+
+// remember key words : useReducer, Redux, state management, functional components, reducers, global state, middleware.
 // 52. How does one connect Redux to a React component ?
+// ans = You can connect Redux to a React component using the connect function from the react-redux library. The connect function allows you to map the state and dispatch functions from the Redux store to the props of a React component. You can use the connect function to access the state and dispatch actions in a connected component.
+
+
 // 53. What are React middlewares in Redux, and give examples ?
+// ans = Middlewares in Redux are functions that intercept and process actions before they reach the reducers. Middlewares provide a way to add custom logic, side effects, and asynchronous behavior to Redux applications. Some common examples of middlewares in Redux are redux-thunk, redux-saga, and redux-logger.
+
+
 // 54. What are thunks in Redux ?
+// ans = Thunks are a type of middleware in Redux that allows you to write asynchronous logic in Redux applications. Thunks are functions that return another function, which can dispatch actions and access the Redux store. Thunks are commonly used to handle asynchronous actions like fetching data from an API and updating the state in Redux applications.
+
+// remember key words : Thunks, middleware, asynchronous logic, dispatch actions, Redux store, fetching data, updating state.
+
 // 55. How do you handle asynchronous actions in Redux ?
+
+// ans = You can handle asynchronous actions in Redux using thunks, sagas, or observables. Thunks are a type of middleware that allows you to write asynchronous logic in Redux applications. Sagas are another middleware that uses generator functions to handle side effects and asynchronous actions. Observables are a type of middleware that uses RxJS observables to handle asynchronous actions in Redux applications.
+
+// remember key words : asynchronous actions, Redux, thunks, sagas, observables.
+
 // 56. Explain the differences between Redux, Context API, and MobX for state management.
+// ans = Redux, Context API, and MobX are three popular state management solutions in React that provide different approaches to managing the state of a React application.
+
+// Redux is a state management library that provides a centralized store, actions, reducers, and middleware to manage the state of a React application. Redux is commonly used for complex applications that require global state management and predictable state updates.
+
+// Context API is a feature in React that allows you to share data between components without passing props manually. Context API provides a way to pass data through the component tree without having to pass props down manually at every level. Context API is useful for managing global state, theme settings, and user preferences in React applications.
+
+// MobX is a state management library that uses observables and reactions to manage the state of a React application. MobX allows you to create observable data structures that automatically update the UI when the data changes. MobX is commonly used for applications that require reactive and scalable state management.
+
+// remember key words : Redux, Context API, MobX, state management, centralized store, actions, reducers, middleware, global state, predictable state updates, observables, reactions, reactive, scalable.
+
+
 // 57. What is React Router ?
+// ans = React Router is a popular routing library for React that allows you to create dynamic and declarative routing in React applications. React Router provides components like BrowserRouter, Route, Link, and Switch to handle routing and navigation in React applications. It allows you to define routes, nested routes, and dynamic routes in a declarative way.
+
 // 58. How do you implement dynamic routing in React ?
+// ans = You can implement dynamic routing in React using React Router. Dynamic routing allows you to define routes that change based on the URL parameters or other conditions. You can use the Route component from React Router to define dynamic routes and access the route parameters using the useParams hook. Dynamic routing allows you to create flexible and interactive navigation in React applications.
+
+// example :
+// import { BrowserRouter as Router, Route, Switch, useParams } from 'react-router-dom';
+
+// const App = () => {
+//     return (
+//         <Router>
+//             <Switch>
+//                 <Route path="/users/:id" component={UserDetails} />
+//             </Switch>
+//         </Router>
+
 // 59. What is the difference between BrowserRouter and HashRouter ?
+// ans = BrowserRouter and HashRouter are two types of routers provided by React Router for handling routing in React applications.
+
+// BrowserRouter uses the HTML5 history API to create clean URLs without the hash symbol (#). It is recommended for modern browsers and server-side rendering.
+
+// HashRouter uses the hash portion of the URL to create routes. It is recommended for older browsers that do not support the HTML5 history API and for static websites.
+
 // 60. What is the significance of Route and Switch in React Router ?
+// ans = Route and Switch are two components provided by React Router for defining routes and handling navigation in React applications.
+
+// Route is used to define a route in a React application. It takes a path prop that specifies the URL path and a component prop that specifies the component to render when the path matches.
+
+// Switch is used to group Route components and ensure that only one Route is rendered at a time. It renders the first Route that matches the current URL path and ignores the rest. Switch helps to prevent multiple routes from rendering simultaneously and ensures that only one route is active at a time.
+
 // 61. How do you pass parameters in React Router ?
-// 1. What is React ?
-// 2. Explain the difference between Real DOM and Virtual DOM ?
-// 3. What are the key features of React ?
-// 4. What is JSX ?
-// 5. Why can't browsers read JSX ?
-// 6. What are React components ?
-// 7. Differentiate between a Class component and a Functional component.
-// 8. What is the difference between state and props in React ?
-// 9. What are React hooks ? Name some common hooks.
-// 10. How do useState and useEffect work in React ?
-// 11. What is the importance of key in React ?
-// 12. Explain the concept of lifting state up in React.
-// 13. How does one pass data between components in React ?
-// 14. What are the new features introduced in React 18 ?
-// 15. What is concurrent rendering in React 18 ?
-// 16. How does automatic batching work in React 18 ?
-// 17. What is the useTransition hook, and how does it work ?
-// 18. Explain the working of useDeferredValue in React 18.
-// 19. What is Suspense in React, and how does it work ?
-// 20. How has React 18 improved Suspense ?
-// 21. What is the new startTransition function in React 18 ?
-// 22. What is the difference between useTransition and startTransition ?
-// 23. How do you use the Concurrent Features introduced in React 18 ?
-// 24. How does React 18 enhance server - side rendering(SSR) ?
-// 25. What is React Server Components, and how does it work with React 18 ?
-// 26. What role does the concurrentMode flag play in React 18 ?
-// 27. Explain the React lifecycle methods in detail.
-// 28. What is React Context API, and when would you use it ?
-// 29. What are higher - order components(HOCs) in React ?
-// 30. How does React handle forms and controlled components ?
-// 31. What are uncontrolled components in React ?
-// 32. What is Prop Drilling, and how can it be avoided ?
-// 33. What are React Portals, and when should you use them ?
-// 34. What is the significance of React’s shouldComponentUpdate method ?
-// 35. What are Fragments in React ?
-// 36. Explain the concept of memoization in React using React.memo and useMemo.
-// 37. How do you optimize performance in a React application ?
-// 38. What are the rules for using React Hooks ?
-// 39. How do you handle errors in React using error boundaries ?
-// 40. What is the componentDidCatch() method in React ?
-// 41. What are synthetic events in React ?
-// 42. How can you test a React component ?
-// 43. What is the role of Jest in React testing ?
-// 44. What is the difference between shallow rendering and full rendering in testing ?
-// 45. How does one implement lazy loading in React ?
-// 46. How can you test React hooks ?
-// 47. How do you handle forms and validations in React ?
-// 48. What is Redux, and how does it relate to React ?
-// 49. What are the key principles of Redux ?
-// 50. What are actions, reducers, and the store in Redux ?
-// 51. What is the difference between useReducer and Redux ?
-// 52. How does one connect Redux to a React component ?
-// 53. What are React middlewares in Redux, and give examples ?
-// 54. What are thunks in Redux ?
-// 55. How do you handle asynchronous actions in Redux ?
-// 56. Explain the differences between Redux, Context API, and MobX for state management.
-// 57. What is React Router ?
-// 58. How do you implement dynamic routing in React ?
-// 59. What is the difference between BrowserRouter and HashRouter ?
-// 60. What is the significance of Route and Switch in React Router ?
-// 61. How do you pass parameters in React Router ?
-// 62. What are nested routes in React Router ?
+// ans = You can pass parameters in React Router using route parameters, query parameters, or state. Route parameters are defined in the URL path and accessed using the useParams hook. Query parameters are defined as key-value pairs in the URL query string and accessed using the useLocation hook. State can be passed as an object to the history.push method to navigate to a new route with state data.
 
 
-
-
-// 1. Program to find longest word in a given sentence ?
-// 2. How to check whether a string is palindrome or not ?
-// 3. Write a program to remove duplicates from an array ?
-// 4. Program to find Reverse of a string without using built-in method ?
-// 5. Find the max count of consecutive 1’s in an array ?
-// 6. Find the factorial of given number
-// 7. Given 2 arrays that are sorted[0, 3, 4, 31] and[4, 6, 30].Merge them and sort[0, 3, 4, 4, 6, 30, 31] ?
-// 8. Create a function which will accepts two arrays arr1 and arr2.The function should return true if every value in arr1 has its corresponding value squared in array2.The frequency of values must be same.
-//9. Given two strings.Find if one string can be formed by rearranging the letters of other string.
-//10. Write logic to get unique objects from below array ?
-
-
-// 1. What is JavaScript ?
-//2. What are the data types supported by JavaScript ?
-//3. What is the difference between`let`, `const`, and`var` ?
-// 4. Explain how `==` and `===` differ.
-// 5. What is a closure ?
-//6. What is hoisting ?
 //7. Explain the concept of "this" in JavaScript.
+// ans = The "this" keyword in JavaScript refers to the object that is currently executing the code. It is a special keyword that is used to access the current object's properties and methods. The value of "this" depends on how a function is called and can vary based on the context in which it is used.
+
+// remember key words : "this" keyword, object, executing code, properties, methods, function, context.
+
 // 8. What are JavaScript prototypes ?
+// ans = JavaScript prototypes are a mechanism that allows objects to inherit properties and methods from other objects. Prototypes are used to create a chain of objects that share common properties and methods. When you access a property or method on an object, JavaScript looks up the prototype chain to find the property or method on the object's prototype.
+
+// remember key words : JavaScript prototypes, inherit, properties, methods, chain of objects, common properties, prototype chain.
+
 //9. What is the difference between `null` and`undefined` ?
+// ans = The `null` and `undefined` are two primitive data types in JavaScript that represent the absence of a value.
+
 //10. How does JavaScript handle asynchronous operations ?
+// ans = JavaScript handles asynchronous operations using callbacks, promises, async/await, and event loops. Asynchronous operations allow JavaScript to perform tasks like fetching data from a server, handling user input, and updating the UI without blocking the main thread. JavaScript uses event loops to manage asynchronous tasks and ensure that the application remains responsive and performant.
+
 // 11. What is a promise ?
-//12. What are async / await functions ?
+// ans = A promise is an object in JavaScript that represents the eventual completion or failure of an asynchronous operation. Promises are used to handle asynchronous tasks like fetching data from a server, reading files, and handling user input. Promises have three states: pending, fulfilled, and rejected, and can be chained together to handle multiple asynchronous operations.
+
 //13. Explain event delegation in JavaScript.
+// ans = Event delegation is a technique in JavaScript that allows you to attach a single event listener to a parent element to handle events for multiple child elements. Instead of attaching event listeners to each individual child element, you can use event delegation to listen for events on the parent element and handle them based on the target element. Event delegation helps to reduce the number of event listeners and improve performance in JavaScript applications.
+
 // 14. What are JavaScript modules ?
+// ans = JavaScript modules are a way to organize and structure code in JavaScript applications. Modules allow you to split your code into separate files and import/export functionality between them. JavaScript modules help to improve code organization, reusability, and maintainability in large applications.
+
 //15. How can you prevent a function from being called multiple times ?
+// ans = You can prevent a function from being called multiple times by using debouncing or throttling techniques. Debouncing delays the execution of a function until a certain amount of time has passed without the function being called again. Throttling limits the rate at which a function can be called to prevent it from being called too frequently. These techniques help to optimize performance and prevent unnecessary function calls in JavaScript applications.
+
 //16. What is the event loop ?
+// ans = The event loop is a mechanism in JavaScript that allows the runtime environment to handle asynchronous tasks and events. The event loop continuously checks the call stack and the task queue to determine which tasks to execute next. It ensures that the application remains responsive and performs efficiently by managing the execution of asynchronous tasks and events.
+
 // 17. What is the difference between `apply()` and `call()` methods ?
+// ans = The `apply()` and `call()` methods are used to call a function with a specified `this` value and arguments.
+
 //18. What is `bind()` method used for?
-//19. What is a JavaScript event loop ?
-// 20. Explain the concept of "event bubbling" and "event capturing".
+// ans = The `bind()` method in JavaScript is used to create a new function with a specified `this` value and arguments. It allows you to bind a function to a specific object and set the `this` value for the function. The `bind()` method returns a new function that can be called with the specified `this` value and arguments.
+
+
 // 21. What is the difference between `deep copy` and`shallow copy` ?
+// ans = The `deep copy` and `shallow copy` are two ways to copy objects in JavaScript.
+
+// Deep copy: A deep copy creates a new object with copies of the original object's properties and nested objects. It creates a separate copy of the object and its nested objects, so changes to the original object do not affect the copied object.
+
+// Shallow copy: A shallow copy creates a new object with copies of the original object's properties. It creates a new object with copies of the original object's properties, but does not create copies of nested objects. Changes to the original object's properties will affect the copied object, but changes to nested objects will affect both the original and copied objects.
+
 //22. What are generator functions ?
 //23. What is the `new` keyword used for?
 // 24. How do JavaScript’s `setTimeout` and `setInterval` work ?
@@ -419,6 +559,8 @@
 //28. How does JavaScript’s garbage collection work ?
 //29. What are "decorators" in JavaScript ?
 // 30. Explain the difference between `prototype` and`__proto__`.
+// prototype is a property of a function that points to an object. It is used to add properties and methods to all instances of the function's objects. __proto__ is a property of an object that points to its prototype object. It is used to access the prototype of an object and inherit properties and methods from the prototype object.
+
 // 31. What is the purpose of`Object.assign()` ?
 //32. What are "template literals" ?
 //33. What is the `spread` operator ?
@@ -428,60 +570,44 @@
 //37. What is`Symbol` used for in JavaScript ?
 //38. How do you create a class in JavaScript ?
 // 39. What is destructuring in JavaScript ?
+
+
 //40. What is the `Proxy` object ?
+// The Proxy object in JavaScript is a powerful feature introduced in ECMAScript 6(ES6) that allows you to create a proxy for another object, enabling you to intercept and redefine fundamental operations for that object.These operations include property access, assignment, enumeration, function invocation, and more.
 
-// 1. Fundamentals: Start with the basics - variables, data types, and operators.
-// 2. Functions: Dive deep into functions, understanding scope, closures, and the 'this' keyword.
-// 3. ES6 Features: Get comfortable with arrow functions, destructuring, spread / rest operators, and template literals.
-// 4. Async JavaScript: Promises and async / await for handling asynchronous operations.
-// 5. DOM Manipulation: Know how to interact with the Document Object Model(DOM) effectively.
-// 6. Event Handling: Learn about event listeners, event delegation, and the event object.
-// 7. Prototypes and Classes: Understand JavaScript's prototypal inheritance and ES6 classes.
-// 8. Closures: Master this concept, as it's often tested in interviews.
-// 9. Module Systems: Explore CommonJS, AMD, and ES6 modules.
-// 10. AJAX and Fetch API: Learn how to make asynchronous HTTP requests.
-// 11. Design Patterns: Know the most common patterns like Singleton, Observer, and Module.
-// 12. JSON: Understand JSON parsing and stringify.
-// 13. Error Handling: Learn how to handle errors gracefully with try...catch.
-// 14. Data Structures: Arrays, objects, maps, and sets are essential.
-// 15. Functional Programming: Concepts like map, filter, and reduce are valuable.
-// 16. Build Tools: Grasp Webpack and Babel for bundling and transpiling.
-// 17. Testing: Explore testing frameworks like Jest and Mocha.
-// 18. Debugging: Proficiency with browser developer tools is a must.
-// 19. ESLint and Code Style: Adhere to clean code practices.
-// 20. Security: Understand common web security vulnerabilities(e.g., XSS, CSRF).
-// 21. Promises and Async / Await: Master asynchronous programming.
-// 22. Modern JavaScript Frameworks: Learn a popular framework like React, Angular, or Vue.js.
-// 23. Working with APIs: Know how to integrate external APIs into your applications.
-// 24. Documentation: Keep your code well - documented for clarity.
-// 25. Automation: Grasp task runners like Grunt and Gulp.
-// 26. Progressive Web Apps(PWAs): Understand PWA concepts and service workers.
-// 27. Web Performance: Optimize your code for speed and efficiency.
+// A Proxy is created with two parameters:
 
+// target: The original object that you want to proxy.
+// handler: An object containing traps(methods) that intercept operations on the target object.
+// const target = {
+//     message1: "hello",
+//     message2: "everyone"
+// };
 
-// Program to find longest word in a given sentence ?
-//2. How to check whether a string is palindrome or not ?
-//3. Write a program to remove duplicates from an array ?
-// 4. Program to find Reverse of a string without using built-in method ?
-//5. Find the max count of consecutive 1’s in an array ?
-//6. Find the factorial of given number ?
-// 7. Given 2 arrays that are sorted[0, 3, 4, 31] and[4, 6, 30].Merge them and sort[0, 3, 4, 4, 6, 30, 31] ?
-//8. Create a function which will accepts two arrays arr1 and arr2.The function should return true if every value in arr1 has its corresponding value squared in array2.The frequency of values must be same.
-//9. Given two strings.Find if one string can be formed by rearranging the letters of other string.
-//10. Write logic to get unique objects from below array ?
-//I / P : [{ name: "sai" }, { name: "Nang" }, { name: "sai" }, { name: "Nang" }, { name: "111111" }];
-// O / P: [{ name: "sai" }, { name: "Nang" }{ name: "111111" }
-//11. Write a JavaScript program to find the maximum number in an array.
-//12. Write a JavaScript function that takes an array of numbers and returns a new array with only the even numbers.
+// const handler = {
+//     get: function (obj, prop) {
+//         return prop in obj ? obj[prop] : "default";
+//     }
+// };
+
+// const proxy = new Proxy(target, handler);
+
+// console.log(proxy.message1); // Output: hello
+// console.log(proxy.message2); // Output: everyone
+// console.log(proxy.nonExistentProp); // Output: defaul
+
 //13. Write a JavaScript function to check if a given number is prime.
-//14. Write a JavaScript program to find the largest element in a nested array.
-//[[3, 4, 58], [709, 8, 9, [10, 11]], [111, 2]]
-// 15. Write a JavaScript function that returns the Fibonacci sequence up to a given number of terms.
-//16. Given a string, write a javascript function to count the occurrences of each character in the string.
-//17. Write a javascript function that sorts an array of numbers in ascending order.
-//18. Write a javascript function that sorts an array of numbers in descending order.
-//19. Write a javascript function that reverses the order of words in a sentence without using the built-in reverse() method.
-//20. Implement a javascript function that flattens a nested array into a single - dimensional array.
+// function isPrime(num) {
+//     if (num <= 1) {
+//         return false;
+//     }
+//     for (let i = 2; i <= Math.sqrt(num); i++) {
+//         if (num % i === 0) {
+//             return false;
+//         }
+//     }
+//     return true;
+//
 
 
 
@@ -502,7 +628,6 @@
 // 11. What is server - side rendering(SSR) in React, and what are its benefits ?
 // 12. Explain React's Suspense and its role in data fetching and code splitting.
 // 13. What is the purpose of React.memo, and how does it improve performance ?
-// 14. How do you optimize performance in a React application ?
 
 // 𝗥𝗲𝗮𝗰𝘁 𝗘𝗰𝗼𝘀𝘆𝘀𝘁𝗲𝗺
 // 15. What is Redux, and how does it integrate with React for state management ?
@@ -520,84 +645,22 @@
 // 23. How do you handle error boundaries in React, and why are they important ?
 // 24. What is the significance of keys in React lists, and how do they affect performance and rendering ?
 
-// 1.What are the different data types in JavaScript ?
-//2.Explain the concept of hoisting in JavaScript.
-// 3.What is the difference between `==` and`===` in JavaScript ?
-//4.What is a closure in JavaScript ?
-//5.What is the difference between `function declaration` and`function expression` ?
-// 6.What is the `this` keyword in JavaScript, and how does it work ?
-//7. How do you clone an object in JavaScript ?
-//8.What is the difference between `null` and`undefined` ?
-// 9.Explain the concept of prototypal inheritance.
-// 10.What is the difference between `setTimeout()` and`setInterval()` ?
-//11.What is a Promise, and how does it work ?
-//12.What is async / await and how does it simplify working with Promises ?
-// 13.What is the event loop in JavaScript ?
-//14.Explain the concept of debouncing and throttling.
-
-
-// 1. What is React ?
-//2. What is useMemo ?
-//3. What are the features of React ?
-// 4. What is JSX ?
-//5. What is DOM ?
-//6. What is Virtual Dom ?
-// 7. What is component life cycle of React class component ?
-// 8. What are fragments in react ?
-//9. What are props in react ?
-//10. What are synthetic events in react ?
 // 11. What are the difference between Package.json and Package.lock.json ?
+// ans : package.json is a file that gives the necessary information to npm which allows it to identify the project as well as handle the project's dependencies. It can also contain other metadata such as a project description, version, license, scripts, and configuration data. package-lock.json is automatically generated for any operations where npm modifies either the node_modules tree or package.json. It describes the exact tree that was generated, such that subsequent installs are able to generate identical trees, regardless of intermediate dependency updates.
+
 //12. What are the differences between client side and server side rendering ?
-//13. What is state in Reactjs ?
-// 14. What are props ?
-//15. What are the differences between State and Props in react ?
-//16. What is props drilling ?
-// 17. What are the disadvantages of props drilling and How we can avoid props drilling ?
-//18. What are Pure components in React ?
-//19. Whatare Ref’s in React ?
 // 20. What is meant by forward ref ?
-//21. What are Error boundaries ?
-//22. What are Higher order components in react ?
-// 23. What are the differences between controlled and uncontrolled components ?
-//24. What is useCallback ?
-//25. What are the differences between useMemo and useCallback ?
-// 26. What are keys in React ?
-//27. What is Lazy loading in React ?
-//28. What is suspense in React ?
-// 29. What are custom hooks ?
-//30. What is useReducer hook ?
-//31. What are Portals in react ?
-// 32. What is context in react ?
-//33. Practical question: Give an example of context api usage ?
-//34. What is the purpose of callback function as an argument of setState() ?
-// 35. Practical question: create a custom hook for increment / decrement counter ?
-//36. Which lifecycle hooks in class component are replaced with useEffect in functional components ?
 //37. What is Strict mode in react ?
-// 38. What are the different ways to pass data from child component to parent component in react ?
 //39. Practical question: How to send data from child to parent using callback functions ?
 // 40. Practical question: How to send the data from child component to parent using useRef ?
-// 41. How do you optimize your react application ?
-//42. How would you consume a RESTful JSON API in reactjs ?
 //43.different design patterns used in react ?
-// 44. context api vs redux
-// 45. prop types in react(How to apply validation on props in react)
 // 46. What are React Mixins ?
-//47. what are the different hooks you have used ?
-//48. What are render props in react ?
-// 49. What are the different types of exports and imports ?
 //50. What are the differences between create element vs clone element in react ?
 //51. When to use useState and useReducer ?
 // 52. What is flushSync in react ?
-//53. What are protected routes in react ?
 //54. What is react - routerhas context menu
 
-// 1. Explain the differences between == and ===.
-//2. What is event delegation, and how does it function in JavaScript ?
-// 3. Can you provide an illustration of how ES6 has altered the approach to working with "this" in JavaScript ?
-// 4. Explain the concept of prototypal inheritance.
 //5. Differentiate between a variable that is null, undefined, or undeclared.
-//6. Define what a closure is and describe its uses and advantages.
-//7. Explain the primary distinction between the Array.forEach() loop and Array.map() method, as well as when to choose one over the other.
 //8. What is a common scenario for employing anonymous functions ?
 // 9. Distinguish between host objects and native objects.
 //10. Clarify the distinctions among 'function User(){}', 'var user = User()', and 'var user = new User()'
@@ -606,25 +669,16 @@
 //13. Explain the differences between feature detection, feature inference, and utilizing the User Agent(UA) string.
 //14. Define the concept of "hoisting."
 // 15. What is type coercion, and what are some common pitfalls associated with relying on it in JavaScript code ?
-// 16. Describe event bubbling and event capturing.
 //17. What distinguishes an "attribute" from a "property" ?
 // 18. List the advantages and disadvantages of extending built -in JavaScript objects.
 //19. Discuss the same - origin policy's implications for JavaScript.
-// 20. Why is it referred to as a "Ternary operator," and what does the term "Ternary" signify ?
-// 21. Define strict mode and outline some of its advantages and disadvantages.
-//22. Analyze the pros and cons of writing JavaScript code in a language that compiles to JavaScript.
-//23. What tools and techniques do you employ for debugging JavaScript code ?
 // 24. Enumerate the benefits and drawbacks of immutability and explain how you can achieve it in your code.
-//25. Differentiate between synchronous and asynchronous functions and elucidate the event loop.
-//26. Explain the disparities between variables created using let, var, or const.
 // 27. Compare ES6 classes and ES5 function constructors, and furnish a use case for the arrow(=> ) function syntax.
 //28. Describe the advantages of using the arrow syntax for methods in constructors.
-//29. Define a higher - order function and provide an example of object or array destructuring.
 //30. Give an example of generating a string using ES6 Template Literals and explain their benefits.
 // 31. Provide an example of a curry function and clarify why this syntax can be advantageous.
 //32. Discuss the benefits of using spread syntax and differentiate it from rest syntax.
 // 33. Explain how code sharing between files can be accomplished.
-//34. Define what a promise is and describe its applications.
 
 // 1. What is the DOM, and how does it relate to HTML ?
 // 2. How can you access elements in the DOM using JavaScript?

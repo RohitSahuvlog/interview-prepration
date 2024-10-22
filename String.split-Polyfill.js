@@ -1,5 +1,5 @@
-  /* 💡"JavaScript-with-JC"
-👉 Polyfill of String.prototype.split 
+/* 💡"JavaScript-with-JC"
+👉 Polyfill of String.prototype.split
 */
 
 const message = "This is the string with two the in it.";
@@ -13,7 +13,7 @@ const result2 = message.split("the");
 
 const result3 = message.split("");
 // console.log(result3);
-/* ['T', 'h', 'i', 's', ' ', 'i', 's',' ', 't', 'h', 'e', ' ', 's', 't','r', 'i', 'n', 'g', ' ', 
+/* ['T', 'h', 'i', 's', ' ', 'i', 's',' ', 't', 'h', 'e', ' ', 's', 't','r', 'i', 'n', 'g', ' ',
     'w', 'i','t', 'h', ' ', 't', 'w', 'o', ' ','t', 'h', 'e', ' ', 'i', 'n', ' ','i', 't', '.' ]
 */
 
@@ -36,12 +36,12 @@ String.prototype.customSplit = function (separator, limit) {
     if (result.length >= limit) {
       return;
     }
-    const index = str.indexOf(separator);
+    const index = str.indexOf(separator);  // remove separator from the string if it exists in the result array and contains the separator in the result array
 
     if (index >= 0) {
-      result.push(str.substring(0, index));
+      result.push(str.substring(0, index)); // push the substring from 0 to index in the result array
 
-      splitString(str.substring(index + separator.length));
+      splitString(str.substring(index + separator.length)); // recursively call the splitString function with the substring from index + separator.length as the remaining string why ?
     } else {
       result.push(str);
     }

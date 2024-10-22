@@ -1,11 +1,11 @@
-/* 💡"JavaScript-with-JC" 
-👉Array.prototype.splice and Its Polyfill 
+/* 💡"JavaScript-with-JC"
+👉Array.prototype.splice and Its Polyfill
 Array.prototype.splice modifies an original array and returns deleted values array.
 
 💡splice method takes (start, howManyDelete, newAdd1, newAdd2, newAddN), If no argument  is passed then original array remains as it is and it returns an empty array [].
 
 positive index =>  0  1  2
-💡for an array = [10,20,30]  
+💡for an array = [10,20,30]
 negative index => -3 -2 -1
 
 💡Example -
@@ -28,7 +28,7 @@ here, startIndex = -4, deleteCount = 3, addNewValue = [77,88,99]
 
 console.log(numbers); [ 10, 11, 77, 88, 99, 15 ]
 console.log(deletedNumbers); [ 12, 13, 14 ]
- 
+
 💡Note - splice mutates the original array, and returns deleted values array.
 
 💡Use Case -
@@ -55,7 +55,7 @@ output 👇
   { id: 4, todo: 'Watch Netflix' }
 ]
 
-👉 One Level Up :- We can create our own custom splice( Polyfill of splice ), Check out the code below.👇 
+👉 One Level Up :- We can create our own custom splice( Polyfill of splice ), Check out the code below.👇
 */
 
 const numbers = [10, 11, 12, 13, 14, 15];
@@ -101,15 +101,15 @@ Array.prototype.customSplice = function (start, deleteCount) {
   }
 
   for (let i = 2; i < arguments.length; i++) {
-    valuesBeforeStart.push(arguments[i]);
+    valuesBeforeStart.push(arguments[i]); // [77, 88]
   }
 
   let result = valuesBeforeStart.concat(valuesAfterSplice);
-  let len = Math.max(array.length, result.length);
+  let len = Math.max(array.length, result.length); // length of array before splice after splice
 
   for (i = 0; i < len; i++) {
     if (result.length > i) {
-      array[i] = result[i];
+      array[i] = result[i]; // [10, 11, 77, 88, 15]
     } else {
       array.pop();
     }

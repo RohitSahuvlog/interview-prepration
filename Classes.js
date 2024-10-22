@@ -150,7 +150,6 @@ sachin.getInfo(); // name sachin age 60
 
 class Child extends Parent {
   // case 1 :- if we don't specify constructor then default constrouctor calls super constructor automatically
-
   // case 2 :- if we specify parameterized constructor then need to call super constructor at the starting
   constructor(name, age) {
     super(name, age); // similar to Parent.call(this, name, age);
@@ -159,11 +158,7 @@ class Child extends Parent {
 
 const sachinBaby = new Child("sachinBaby", "28");
 sachinBaby.getInfo(); // name sachinBaby age 28 ( Child inheriting the properties of Parent )
-
-///////////////////////////////////////////////////////////////////
-
 // 💡 Class Inheritance Method Overriding
-
 class Father {
   constructor(name, age) {
     this.name = name;
