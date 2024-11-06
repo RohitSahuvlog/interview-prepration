@@ -125,6 +125,8 @@
 // ans = The test pyramid is a testing strategy that categorizes tests into three layers: unit tests, integration tests, and end-to-end tests. The test pyramid emphasizes writing more unit tests than integration tests and more integration tests than end-to-end tests. When testing HTTP APIs, you can actualize the test pyramid by writing unit tests for individual components, integration tests for API endpoints, and end-to-end tests for the entire application flow.
 
 // What is the purpose of indexing in MongoDB?
+// ans = Indexing in MongoDB is used to improve query performance by creating indexes on fields in a collection. Indexes allow MongoDB to quickly locate and retrieve documents that match a query criteria. Indexing can speed up query execution, reduce the number of documents scanned, and improve the overall performance of read operations in MongoDB.
+
 // Explain the difference between classes and interfaces in TypeScript.
 // What are decorators in typescript? How to use them?
 // What do you understand by cross-site scripting?
