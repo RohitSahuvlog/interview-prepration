@@ -14,6 +14,8 @@
 // How is React different from Angular JS?
 // ans = React is a JavaScript library for building user interfaces, while Angular is a JavaScript framework for building web applications. React is focused on the view layer, while Angular provides a complete framework for building web applications. React uses a virtual DOM, while Angular uses a regular DOM. React is developed and maintained by Facebook, while Angular is developed and maintained by Google.
 
+// a- main
+a - secondy
 
 // What is Replication in MongoDB?
 // ans = Replication is the process of synchronizing data across multiple servers. It provides redundancy and increases data availability with multiple copies of data on different database servers. Replication protects a database from the loss of a single server. It also allows you to recover from hardware failure and service interruptions.
@@ -157,7 +159,11 @@
 // what is the lift state up in react?
 // ans = Lifting state up in React is a pattern where you move the state from child components to their parent component. This allows you to share state between multiple components and keep the state in sync across the application. By lifting state up, you can create a single source of truth for the state and pass it down to child components as props.
 
-// "[]" == "[]" // false
+// "[]" == "[]" // true
+// [] == [] // false
+
+
+
 
 // what are the primitive types and union types in typescript?
 // ans = In TypeScript, primitive types are basic data types like number, string, boolean, null, undefined, and symbol. Union types allow you to combine multiple types into a single type. You can use union types to define variables that can have multiple possible types. For example, you can define a variable that can be either a number or a string using a union type.
@@ -551,24 +557,40 @@
 // Shallow copy: A shallow copy creates a new object with copies of the original object's properties. It creates a new object with copies of the original object's properties, but does not create copies of nested objects. Changes to the original object's properties will affect the copied object, but changes to nested objects will affect both the original and copied objects.
 
 //22. What are generator functions ?
+
 //23. What is the `new` keyword used for?
+// ans = The `new` keyword in JavaScript is used to create an instance of a constructor function or a class. It creates a new object and sets the `this` value to the new object. The `new` keyword allows you to create new instances of objects and classes in JavaScript.
+
 // 24. How do JavaScript’s `setTimeout` and `setInterval` work ?
+
 //25. What is a `WeakMap` and how is it different from a`Map` ?
-//26. What is a`Set` in JavaScript ?
+//26. What is a `Set` in JavaScript?
+
 // 27. What is `Object.create()` used for?
-//28. How does JavaScript’s garbage collection work ?
+// ans = The `Object.create()` method in JavaScript is used to create a new object with a specified prototype object. It allows you to create an object that inherits properties and methods from another object. The `Object.create()` method takes a prototype object as an argument and returns a new object with the specified prototype.
+
+
+//28. How does JavaScript’s garbage collection work?
+
 //29. What are "decorators" in JavaScript ?
+
 // 30. Explain the difference between `prototype` and`__proto__`.
 // prototype is a property of a function that points to an object. It is used to add properties and methods to all instances of the function's objects. __proto__ is a property of an object that points to its prototype object. It is used to access the prototype of an object and inherit properties and methods from the prototype object.
 
 // 31. What is the purpose of`Object.assign()` ?
+
 //32. What are "template literals" ?
 //33. What is the `spread` operator ?
 // 34. What is the `rest` parameter ?
+
 //35. Explain the `for...of` loop.
+
 // 36. What are `async` and `await` keywords used for?
+
 //37. What is`Symbol` used for in JavaScript ?
+
 //38. How do you create a class in JavaScript ?
+
 // 39. What is destructuring in JavaScript ?
 
 
@@ -610,11 +632,9 @@
 //
 
 
-
-
 // 𝗖𝗼𝗿𝗲 𝗖𝗼𝗻𝗰𝗲𝗽𝘁𝘀
 // 1. What are the key differences between React class components and functional components ?
-//2. Explain the concept of state in React and how it differs from props.
+// 2. Explain the concept of state in React and how it differs from props.
 // 3. What is the virtual DOM, and how does React use it to optimize rendering ?
 // 4. How does React's reconciliation algorithm work?
 // 5. What is a React hook, and how does it differ from a class component lifecycle method ?
@@ -625,14 +645,12 @@
 // 𝗔𝗱𝘃𝗮𝗻𝗰𝗲𝗱 𝗧𝗼𝗽𝗶𝗰𝘀
 // 9. What is the purpose of useReducer, and how does it compare to useState ?
 // 10. How does React handle context, and how can it be used to manage state across components ?
-// 11. What is server - side rendering(SSR) in React, and what are its benefits ?
+// 11. What is server-side rendering(SSR) in React, and what are its benefits ?
 // 12. Explain React's Suspense and its role in data fetching and code splitting.
 // 13. What is the purpose of React.memo, and how does it improve performance ?
 
 // 𝗥𝗲𝗮𝗰𝘁 𝗘𝗰𝗼𝘀𝘆𝘀𝘁𝗲𝗺
 // 15. What is Redux, and how does it integrate with React for state management ?
-// 16. Can you explain the difference between controlled and uncontrolled components in React ?
-// 17. How does React Router work for routing in a React application ?
 // 18. What are the benefits of using TypeScript with React, and how do you set it up ?
 
 // 𝗧𝗲𝘀𝘁𝗶𝗻𝗴 𝗮𝗻𝗱 𝗗𝗲𝗯𝘂𝗴𝗴𝗶𝗻𝗴
@@ -642,71 +660,188 @@
 
 // 𝗣𝗿𝗮𝗰𝘁𝗶𝗰𝗮𝗹 𝗔𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻
 // 22. How do you handle forms and form validation in React ?
-// 23. How do you handle error boundaries in React, and why are they important ?
+// 23. How do you handle error boundaries in React, and why are they important?
+
+
 // 24. What is the significance of keys in React lists, and how do they affect performance and rendering ?
 
 // 11. What are the difference between Package.json and Package.lock.json ?
 // ans : package.json is a file that gives the necessary information to npm which allows it to identify the project as well as handle the project's dependencies. It can also contain other metadata such as a project description, version, license, scripts, and configuration data. package-lock.json is automatically generated for any operations where npm modifies either the node_modules tree or package.json. It describes the exact tree that was generated, such that subsequent installs are able to generate identical trees, regardless of intermediate dependency updates.
 
 //12. What are the differences between client side and server side rendering ?
+
 // 20. What is meant by forward ref ?
+
 //37. What is Strict mode in react ?
+
 //39. Practical question: How to send data from child to parent using callback functions ?
+
+
 // 40. Practical question: How to send the data from child component to parent using useRef ?
+
+
 //43.different design patterns used in react ?
+
+
 // 46. What are React Mixins ?
+
 //50. What are the differences between create element vs clone element in react ?
+
+
 //51. When to use useState and useReducer ?
+
 // 52. What is flushSync in react ?
-//54. What is react - routerhas context menu
+
+//54. What is react-router has context menu
 
 //5. Differentiate between a variable that is null, undefined, or undeclared.
+// ans: A variable that is null has been explicitly assigned a value of null, which represents the absence of a value. A variable that is undefined has not been assigned a value and does not exist in memory. An undeclared variable has not been declared using the var, let, or const keywords and will throw a ReferenceError if you try to access it.
+
 //8. What is a common scenario for employing anonymous functions ?
+// ans: Anonymous functions are commonly used in scenarios where a function is only needed for a short period of time or is used as a callback function. They are often used in event handlers, callbacks, and higher-order functions where a named function is not necessary or would clutter the code.
+
 // 9. Distinguish between host objects and native objects.
+// ans: Host objects are objects provided by the environment in which JavaScript is running, such as the browser or Node.js. They include objects like window, document, and console in the browser environment. Native objects are built-in objects provided by the JavaScript language, such as Array, Object, and Function. Host objects are specific to the environment, while native objects are part of the JavaScript language itself.
+
+
 //10. Clarify the distinctions among 'function User(){}', 'var user = User()', and 'var user = new User()'
 // 11. Can you elucidate the purposes of Function.call and Function.apply, along with their notable differences ?
+
+
 // 12. Describe the Function.prototype.bind method.
+
 //13. Explain the differences between feature detection, feature inference, and utilizing the User Agent(UA) string.
+
 //14. Define the concept of "hoisting."
+
 // 15. What is type coercion, and what are some common pitfalls associated with relying on it in JavaScript code ?
 //17. What distinguishes an "attribute" from a "property" ?
+// ans: In JavaScript, an "attribute" is a value that is defined in the HTML markup of an element, while a "property" is a value that is defined in the DOM object of an element. Attributes are defined in the HTML markup and can be accessed using the getAttribute and setAttribute methods. Properties are defined in the DOM object and can be accessed directly as object properties. Attributes are static and do not change, while properties are dynamic and can be updated.
+
 // 18. List the advantages and disadvantages of extending built -in JavaScript objects.
+
 //19. Discuss the same - origin policy's implications for JavaScript.
+
+
 // 24. Enumerate the benefits and drawbacks of immutability and explain how you can achieve it in your code.
+
+
 // 27. Compare ES6 classes and ES5 function constructors, and furnish a use case for the arrow(=> ) function syntax.
 //28. Describe the advantages of using the arrow syntax for methods in constructors.
+
 //30. Give an example of generating a string using ES6 Template Literals and explain their benefits.
 // 31. Provide an example of a curry function and clarify why this syntax can be advantageous.
+
 //32. Discuss the benefits of using spread syntax and differentiate it from rest syntax.
+
 // 33. Explain how code sharing between files can be accomplished.
 
 // 1. What is the DOM, and how does it relate to HTML ?
-// 2. How can you access elements in the DOM using JavaScript?
+
+
 // 3. Explain the differences between getElementById, getElementsByClassName, and getElementsByTagName.
+
 // 4. What is the purpose of the querySelector method, and how does it differ from querySelectorAll ?
+
+
 // 5. Explain the concept of event bubbling and how it impacts event handling in the DOM.
+
 // 6. How do you stop event propagation in the DOM ?
+
 // 7. What is event delegation, and why is it useful in DOM manipulation ?
+
 // 8. How can you dynamically create HTML elements using JavaScript?
-// 9. Explain the differences between the textContent and innerHTML properties.
 // 10. How can you modify CSS properties of an element in the DOM using JavaScript?
+
+
+
 // 11. Explain the purpose of the setAttribute and getAttribute methods in DOM manipulation.
+
+
+
 // 12. What is the difference between appendChild and insertBefore methods for adding elements to the DOM ?
+
+
 // 13. How do you remove elements from the DOM using JavaScript?
-// 14. What is the purpose of the parentNode property in DOM manipulation ?
+
+
+
 // 15. Explain how to clone an element in the DOM using JavaScript.
-// 16. How do you check if an element exists in the DOM using JavaScript?
-// 17. What is the purpose of the classList property, and how can you use it to manipulate classes ?
-// 18. How do you add and remove classes from an element in the DOM ?
+
+
 // 19. Explain the differences between classList.add, classList.remove, and classList.toggle.
+
+
+
 // 20. How can you traverse the DOM tree using JavaScript?
+
 // 21. What are data attributes(data -*), and how can you use them in DOM manipulation ?
+
 // 22. Explain the purpose of the style property in DOM manipulation.
+
 // 23. How can you retrieve the dimensions(width and height) of an element in the DOM ?
+
 // 24. What is the purpose of the offset properties(offsetWidth, offsetHeight, offsetLeft, offsetTop) in DOM manipulation ?
+// ans: The offset properties(offsetWidth, offsetHeight, offsetLeft, offsetTop) represent the dimensions and position of an element relative to its offset parent. They provide information about the size and position of an element within its containing block. The offsetWidth and offsetHeight properties return the width and height of the element, including padding, border, and scrollbar(if present). The offsetLeft and offsetTop properties return the distance of the element's top-left corner from its offset parent's top-left corner.
+
 // 25. How do you handle form manipulation in the DOM using JavaScript?
+// ans: You can handle form manipulation in the DOM using the form property of an element to access form elements and their values. You can use the submit event to handle form submissions, prevent the default behavior of the form, and access the form data. You can use the reset method to clear the form fields and reset the form to its initial state. You can also use the FormData API to access and manipulate form data in the DOM.
+
+
+
 // 26. Explain the differences between innerText, textContent, and innerHTML.
+// ans: innerText: It returns the visible text content of an element, excluding any hidden text or elements. It is not supported in Firefox and is slower than textContent.
+
+// innerHTML: It returns the HTML content of an element, including all child elements. It can be used to set or get the HTML content of an element and is faster than textContent.
+
+// textContent: It returns the text content of an element, including all text and elements. It returns the text content of all elements, including hidden elements, and is faster than innerText.
+
 // 27. How do you detect if an element is hidden or visible in the DOM ?
+// ans: You can detect if an element is hidden or visible in the DOM by checking its display, visibility, or opacity CSS properties. You can use the getComputedStyle method to access the computed styles of an element and check if it is hidden or visible based on its CSS properties.
+
+// implementation example:
+// const element = document.getElementById('example');
+// const styles = window.getComputedStyle(element);
+// const display = styles.getPropertyValue('display');
+// const visibility = styles.getPropertyValue('visibility');
+// const opacity = styles.getPropertyValue('opacity');
+
+// if (display === 'none' || visibility === 'hidden' || opacity === '0') {
+//     console.log('Element is hidden');
+// } else {
+//     console.log('Element is visible');
+// }
+
+
+
+
 // 28. What are the differences between the client and offset properties in DOM manipulation ?
+// answer: The client properties(clientWidth, clientHeight, clientLeft, clientTop) represent the dimensions and position of an element relative to the viewport. The offset properties(offsetWidth, offsetHeight, offsetLeft, offsetTop) represent the dimensions and position of an element relative to its offset parent.
+
+// example: offsetWidth vs clientWidth
+// const element = document.getElementById('example');
+// console.log(element.offsetWidth); // returns the width of the element including padding, border, and scrollbar(if present)
+
+// console.log(element.clientWidth); // returns the width of the element excluding padding and border
+
+
+
 // 29. How can you handle scroll events in the DOM using JavaScript?
+// ans: You can handle scroll events in the DOM using the addEventListener method to listen for the scroll event on the window or a specific element. You can use the scroll event to trigger actions like lazy loading images, infinite scrolling, and updating the UI based on the scroll position. You can access the scroll position using the window.scrollX and window.scrollY properties or the element.scrollTop and element.scrollLeft properties.
+
+//implementation example:
+// window.addEventListener('scroll', () => {
+//     console.log('Scrolling...');
+// });
+
+
+
 // 30. Explain the differences between createDocumentFragment and createElement in DOM manipulation.
+// ans: createDocumentFragment is used to create a new DocumentFragment node that can hold multiple child nodes. It is useful for creating a group of nodes that can be added to the DOM in a single operation, improving performance and reducing reflows. createElement is used to create a new element node with the specified tag name. It creates a single element node that can be added to the DOM as a child of another element.
+// Example:
+// const fragment = document.createDocumentFragment();
+// const div = document.createElement('div');
+// fragment.appendChild(div);
+// document.body.appendChild(fragment);
+
+// use case : When you need to create multiple elements and add them to the DOM in a single operation, you can use createDocumentFragment to improve performance and reduce reflows.

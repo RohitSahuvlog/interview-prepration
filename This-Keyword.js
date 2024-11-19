@@ -82,12 +82,12 @@ arrowFunc();
 const animal = {
   name: "cat",
   displayName() {
+    this1 = this;
     console.log(this); // {name: 'cat', displayName: ƒ}
     console.log(this.name); // cat
-
     // inner arrow function inherits "this" from its outer normal funtion
     const innerArrow = () => {
-      console.log(this); // {name: 'cat', displayName: ƒ}
+      console.log(this1); // {name: 'cat', displayName: ƒ}
       console.log(this.name); // cat
     };
     innerArrow();
@@ -99,7 +99,6 @@ animal.displayName();
 // case 3 :- arrow function inside an arrow function
 const outerArrow = () => {
   console.log(this); //  window object ( Global function's "this" is window object )
-
   // inner arrow function inherits "this" from its outer funtion
   const innerArrow = () => {
     console.log(this); // window object
@@ -117,6 +116,8 @@ function OuterFunction() {
   const innerArrow = () => {
     console.log(this); // OuterFunction { name: 'jayeh' }
   };
+
+  console.log(this); // OuterFunction { name: 'jayeh' }
   innerArrow();
 }
 new OuterFunction();
@@ -141,9 +142,9 @@ myObj.outerNormal();
 // "this" inside normal function having outer arrow function
 
 const myobj2 = {
-  name: "Jc",
-  outerArrowFoo: () => {
-    console.log(this); // window object
+  name: "Jc",/*  */
+  outerArrowFoo: function () {
+    console.log(this); // { name: 'Jc', outerArrowFoo: ƒ }
 
     function innerNormal() {
       console.log(this); // window object

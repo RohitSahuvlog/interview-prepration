@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 var timer;
 var clicksCount = 0;
 var clicksLimit = 20;
