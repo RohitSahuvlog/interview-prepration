@@ -73,7 +73,7 @@ Array.prototype.customSplice = function (start, deleteCount) {
   }
   start = Number(start);
   if (start < 0) {
-    start = array.length + start;
+    start = array.length + start;  // 5 - 2 = 3
   }
   if (isNaN(start)) {
     start = 0;
@@ -82,11 +82,13 @@ Array.prototype.customSplice = function (start, deleteCount) {
     deleteCount = 0;
   }
 
-  let end = start + Number(deleteCount);
+  let end = start + Number(deleteCount);  // 0 + 2 = 2
 
   let valuesBeforeStart = [];
   let SplicedArray = [];
   let valuesAfterSplice = [];
+
+
 
   for (let i = 0; i < array.length; i++) {
     if (i < start) {
@@ -108,8 +110,8 @@ Array.prototype.customSplice = function (start, deleteCount) {
   let len = Math.max(array.length, result.length); // length of array before splice after splice
 
   for (i = 0; i < len; i++) {
-    if (result.length > i) {
-      array[i] = result[i]; // [10, 11, 77, 88, 15]
+    if (result.length > i) { // [10, 11, 77, 88, 15]  lemgth = 5
+      array[i] = result[i]; // [10, 11, 12, 13, 14] => [10, 11, 77, 88, 15]
     } else {
       array.pop();
     }
@@ -117,7 +119,7 @@ Array.prototype.customSplice = function (start, deleteCount) {
   return SplicedArray;
 };
 
-const customNumbers = [10, 11, 12, 13, 14, 15];
+const customNumbers = [10, 11, 12, 13, 14, 15]; // length = 6
 
 const deletedCustomNums = customNumbers.customSplice(2, 3, 77, 88);
 

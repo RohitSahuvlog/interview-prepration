@@ -72,6 +72,7 @@
 
 // 19. What is buffer in Node.js ?
 // ans:A buffer in Node.js is a temporary storage area used to store binary data. Buffers are used to work with binary data in Node.js and provide a way to read, write, and manipulate binary data. Buffers are similar to arrays of integers but are designed to handle binary data more efficiently.
+
 // 20. What are streams in Node.js ?
 // ans:Streams in Node.js are used to handle data transfer in an efficient and scalable way. Streams provide a way to read and write data in chunks, allowing applications to process data as it is received or sent. Streams can be used to read data from a file, write data to a file, or transfer data over a network. Node.js provides four types of streams: Readable, Writable, Duplex, and Transform.
 
@@ -93,6 +94,27 @@
 
 // 26. What is the difference between spawn() and fork() methods ?
 // ans:spawn() and fork() are used to create child processes in Node.js. The difference between them is that spawn() is used to create a new process and execute a command in that process, while fork() is used to create a new process that runs a Node.js module. fork() is commonly used to create child processes that run Node.js applications, while spawn() is used to create child processes that run external commands.
+
+// example of spawn() method
+// const { spawn } = require('child_process');
+// const ls = spawn('ls', ['-lh', '/usr']);
+
+// ls.stdout.on('data', (data) => {
+//     console.log(`stdout: ${data}`);
+// });
+
+// ls.stderr.on('data', (data) => {
+//     console.error(`stderr: ${data}`);
+// });
+
+// example of fork() method
+// const { fork } = require('child_process');
+// const child = fork('child.js');
+
+// child.on('message', (message) => {
+//     console.log(`Message from child process: ${message}`);
+// });
+
 
 
 // 27. Explain the use of the passport module in Node.js.
@@ -116,6 +138,8 @@
 
 // 32. Explain the tls module in Node.js.
 // ans:The tls module in Node.js provides a way to create secure TLS/SSL connections in Node.js applications. The tls module includes classes such as tls.Server and tls.Socket that allow developers to create secure servers and clients that communicate over TLS/SSL. The tls module supports a wide range of cryptographic algorithms and provides a secure way to handle sensitive data in Node.js applications.
+// tls full form: Transport Layer Security
+// ssl full form: Secure Sockets Layer
 
 // tls full form: Transport Layer Security
 // 33. What is a cluster in Node.js ?
@@ -123,6 +147,32 @@
 
 // 34. How to manage sessions in Node.js ?
 // ans:Sessions in Node.js can be managed using middleware such as express-session, which provides a way to store session data in memory or a database. The express-session middleware creates a unique session ID for each user and stores session data in a session store. Session data can be accessed and modified using the req.session object, allowing developers to store user-specific data across multiple requests.
+
+// example
+// const express = require('express');
+// const session = require('express-session');
+
+// const app = express();
+
+// app.use(session({
+//     secret
+//     : '
+//     secret
+//     key
+//     ',
+//     resave: false,
+//     saveUninitialized: true
+// }));
+
+// app.get('/', (req, res) => {
+//     if (req.session.views) {
+//         req.session.views++;
+//         res.send(`You have visited this page ${req.session.views} times`);
+//     } else {
+//         req.session.views = 1;
+//         res.send('Welcome to the session demo. Refresh the page!');
+//     }
+
 
 
 // 35. Explain the types of streams in Node.js.
@@ -138,6 +188,16 @@
 
 // 39. How to read command line arguments in Node.js ?
 // ans:Command line arguments in Node.js can be read using the process.argv array, which contains the command line arguments passed to the Node.js application. The process.argv array includes the path to the Node.js executable, the path to the script being executed, and any additional command line arguments passed to the script. Command line arguments can be accessed using the process.argv array and parsed using the yargs or minimist packages.
+
+// example of reading command line arguments in Node.js
+// process.argv.forEach((val, index) => {
+//     console.log(`${index}: ${val}`);
+// });
+
+// node index.js arg1 arg2 arg3
+// Output: node index.js arg1 arg2 arg3
+// 0: /usr/local/bin/node
+// 1: /path/to/index.js
 
 // 40. What are child processes in Node.js ?:
 // ans:Child processes in Node.js are separate instances of the Node.js runtime that can run concurrently with the parent process. Child processes are used to perform CPU-intensive tasks, run external commands, or create multiple instances of a Node.js application. Child processes can be created using the child_process module in Node.js, which provides a way to spawn new processes, communicate with child processes, and handle child process events.

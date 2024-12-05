@@ -1,11 +1,11 @@
 /* 💡"JavaScript-with-JC"
-👉 Async-await Modern approach for handling Promises 
+👉 Async-await Modern approach for handling Promises
 The async and await keywords provide a way to handle the asynchronous tasks in a synchronous manner.
 async/await allows promise-based behavior to be written in a cleaner way,
 
 💡We can handle promises using async await :-
  1) Sequentially
- 2) Concurrently 
+ 2) Concurrently
 */
 
 // 💡Let's take a simple Example -
@@ -15,7 +15,7 @@ function simpleExample() {
     console.log("generating number...");
     setTimeout(() => {
       let number = Math.floor(Math.random() * 10);
-      if (number>5) {
+      if (number > 5) {
         resolve(`number generated successfully ${number}.`);
       } else {
         reject("problem in generating number!");
@@ -174,11 +174,13 @@ function concurrentAsyncAwait() {
       const task3 = taskThree();
       const task4 = taskFour();
 
+      const task3Result = await task3;
+      console.log(task3Result); // Task 3 Succeed after 3 sec.
+
       const task4Result = await task4;
       console.log(task4Result); // Task 4 Succeed almost instantly.
 
-      const task3Result = await task3;
-      console.log(task3Result); // Task 3 Succeed after 3 sec.
+
 
       const task2Result = await task2;
       console.log(task2Result); // Task 2 Succeed immediately after Task 3, since Task 2 is already resolved.

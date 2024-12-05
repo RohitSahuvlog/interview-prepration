@@ -211,7 +211,7 @@ class Student {
 
   // class method
   static displaySchoolName() {
-    console.log(this.school);
+    console.log(this.school);  // little flower why ? because 'this' refers to the class itself
   }
 }
 
@@ -253,7 +253,10 @@ class BankAccount {
   }
 }
 
-const account = new BankAccount("rakesh", 5000);
+const account = new BankAccount("rakesh", 5000); {
+  // private members can't be accessed outside the class
+  // console.log(account.#amount); // SyntaxError
+}
 console.log(account.name); // rakesh
 
 // console.log(account.#amount); // SyntaxError

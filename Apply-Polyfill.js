@@ -6,10 +6,10 @@ apply method allows us to use the methods of another object or outside methods, 
 💡Note - apply method executes the borrowed function immediately unlike bind ().
 */
 
+
 getPlayerInfo = function (role, country) {
   return `${this.firstName} ${this.lastName}, ${role} from ${country}`;
 };
-
 const player1 = {
   firstName: "Virat",
   lastName: "Kohli",
@@ -20,8 +20,8 @@ const player2 = {
   lastName: "Pandya",
 };
 
-console.log(getPlayerInfo.apply(player1, ["Batsman", "India"]));
-console.log(getPlayerInfo.apply(player2, ["All-Rounder", "India"]));
+// console.log(getPlayerInfo.apply(player1, ["Batsman", "India"]));
+// console.log(getPlayerInfo.apply(player2, ["All-Rounder", "India"]));
 
 Function.prototype.customApply = function (context, args = []) {
   if (!Array.isArray(args)) {
@@ -32,17 +32,16 @@ Function.prototype.customApply = function (context, args = []) {
   let currentContext = context || globalThis;
 
   // Symbol() ensures that new method won't override existing methods of currentContext
-  let newProp = Symbol();
-
+  let newProp = Symbol();  //
   currentContext[newProp] = this;
   console.log(currentContext)
   let result = currentContext[newProp](...args);
-  console.log(result,"result")
+  // console.log(result, "result")
   delete currentContext[newProp];
-  console.log(currentContext,"delete")
-  console.log(result,"resultdsdjksdjskd")
+  console.log(currentContext, "delete")
+  // console.log(result, "resultdsdjksdjskd")
   return result;
 };
 
 console.log(getPlayerInfo.customApply(player1, ["Batsman", "India"]));
-console.log(getPlayerInfo.customApply(player2, ["All-Rounder", "India"]));
+// console.log(getPlayerInfo.customApply(player2, ["All-Rounder", "India"]));

@@ -1,16 +1,16 @@
 /* 💡"JavaScript-with-JC"
-👉 Event Loop, CallStack, Callback and Microtask Queue 
+👉 Event Loop, CallStack, Callback and Microtask Queue
 
-💡 CallStack :- The callStack is used by JavaScript to keep track of multiple function calls. 
+💡 CallStack :- The callStack is used by JavaScript to keep track of multiple function calls.
 CallStack maintains the order of execution of Execution Context.
 
 💡 Callback Queue and Microtask Queue :- All the Asynchronous operations ( callback Functions )
-are stored either in Callback Queue ( also known as TaskQueue or MacroTask Queue ) 
+are stored either in Callback Queue ( also known as TaskQueue or MacroTask Queue )
 or MicroTask Queue ( Higher Priority ).
 
 💡 Callback functions that store into MicroTask Queue ( Higher Priority )
 1) Promises ( fetch api )
-2) Browser Observers 
+2) Browser Observers
 2.a) Mutation Observer
 2.b) Intersection Observer
 2.c) Performance Observer
@@ -23,7 +23,7 @@ or MicroTask Queue ( Higher Priority ).
 3) Timers ( SetTimeout and SetInerval )
 
 💡 Event Loop :- Event Loop continuously  monitors the callstack, callback queue and microtask queue.
-and if callstack is empty and there are any tasks in callback or microtask queues, 
+and if callstack is empty and there are any tasks in callback or microtask queues,
 Event loop pushes the first task into the callstack to execute.
 */
 
@@ -41,11 +41,11 @@ setTimeout(function callBackfunc() {
 
 console.log("end");
 
-/*  👇 output  
+/*  👇 output
 start
 end
 after 1 sec
-Hi, I am asynchronous task 
+Hi, I am asynchronous task
 */
 
 // 💡 2) Let's take an example of Callback Queue ( Task Queue ) + MicroTask Queue ( Higher Priority )
@@ -58,6 +58,7 @@ setTimeout(function cbFunc() {
 });
 
 const p1 = new Promise((resolve, reject) => {
+  console.log("promise started");
   resolve("promise resolved");
 });
 
@@ -68,7 +69,7 @@ p1.then(function cbFuncMicro(result) {
 
 console.log("end");
 
-/*  👇 output 
+/*  👇 output
 start
 end
 promise resolved

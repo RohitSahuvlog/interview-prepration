@@ -5,9 +5,11 @@ import React, { useState } from 'react';
 const DragAndDrop = () => {
     const [items, setItems] = useState([
         { id: 1, text: 'Item 1' },
-        { id: 2, text: 'Item 2' },
         { id: 3, text: 'Item 3' },
-        { id: 4, text: 'Item 4' },
+        { id: 4, text: 'Item 4' }, i - index - 2
+         { id: 2, text: 'Item 2' }, // i - index - 3
+
+
     ]);
 
     const handleDragStart = (e, index) => {
@@ -24,7 +26,7 @@ const DragAndDrop = () => {
         setItems(newItems);
     };
 
-    const handleDragOver = (e) => {
+    const handleDragOver = (e) => {  // why do we need this function? because we need to prevent the default behavior of the browser
         e.preventDefault();
     };
 
@@ -38,7 +40,7 @@ const DragAndDrop = () => {
                         draggable
                         onDragStart={(e) => handleDragStart(e, index)}
                         onDrop={(e) => handleDrop(e, index)}
-                        onDragOver={handleDragOver} // use of drag over event handler is deprecated in favor of drop event handler for performance reasons
+                        onDragOver={handleDragOver}
 
                     >
                         {item.text}

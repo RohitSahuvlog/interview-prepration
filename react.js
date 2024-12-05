@@ -1,6 +1,40 @@
 // How does React work?
 // ans = React is a JavaScript library that is used to build user interfaces. It is used for handling the view layer for web and mobile apps. React was created by Jordan Walke, a software engineer working for Facebook. React was first deployed on Facebook's News Feed in 2011 and on Instagram in 2012.
 
+// what is lambda function
+// ans =In JavaScript, a lambda function is known as an arrow function. Arrow functions provide a shorter syntax for writing functions and also have lexical this binding, which can be very useful.
+
+// what is uninary function
+// ans = A unary function is a function that takes a single argument. It is a type of function that operates on a single input and produces a single output. Unary functions are commonly used in mathematics and computer science to perform simple operations on data.
+
+// what is binary function
+// ans = A binary function is a function that takes two arguments. It is a type of function that operates on two inputs and produces a single output. Binary functions are commonly used in mathematics and computer science to perform operations on pairs of data.
+
+// what is currried function
+// ans = A curried function is a function that takes multiple arguments one at a time. Instead of taking all arguments at once, a curried function returns a new function for each argument until all arguments have been provided. This allows for partial application of functions, where some arguments are fixed, and the resulting function can be called with the remaining arguments later.
+
+// Currying transforms a function with multiple arguments into a series of nested functions, each taking a single argument.This concept originates from lambda calculus and functional programming.
+
+
+
+// example lambda function
+// const add = (a, b) => a + b;
+// console.log(add(2, 3)); // 5
+
+// const numbers = [1, 2, 3, 4];
+// delete numbers[2];
+// console.log(numbers);  // Output: [1, 2, undefined, 4]
+// console.log(numbers.length);
+
+// var x = 10;
+// delete x;  // false
+
+// let y = 20;
+// delete y;  // false
+
+// z = 30;  // Implicit global variable
+// delete z;  // true
+
 // What are React Hooks?
 // ans = React Hooks are functions that let developers "hook into" React state and lifecycle features from function components. They let you use state and other React features without writing a class. You can also create your own Hooks to reuse stateful behavior between different components.
 

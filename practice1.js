@@ -38,8 +38,8 @@
             return arr1;
         }
 
-        while (array1Item || array2Item) {
-          if(array1Item[i] < array2Item[j]){
+        while (i < arr1.length || j < arr2.length) {
+          if(arr[i] < arr2[j]){
             mergedArray.push(array1Item[i])
             i++
           }else{
