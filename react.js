@@ -42,6 +42,10 @@
 // ans = Props are inputs to a React component. They are data passed down from a parent component to a child component. Props are read-only and help you to create dynamic and interactive React applications. You can pass props to functional components or class components. You can also pass props to components using JSX.
 
 
+// differnce between libraries and framework?
+// ans = A library is a collection of pre-written code that you can use in your own projects. A framework is a set of rules and guidelines that help you build your project. A library is a tool that you can use to build your project, while a framework is a structure that you can use to organize your project.
+
+
 // What are the advantages of ReactJS?
 // ans = ReactJS is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications. It's used for handling view layer for web and mobile apps. React also allows us to create reusable UI components. React allows developers to create large web applications that can change data, without reloading the page. The main purpose of React is to be fast, scalable, and simple. It works only on user interfaces in the application. This corresponds to the view in the MVC template. It can be used with a combination of other JavaScript libraries or frameworks, such as Angular JS in MVC.
 
@@ -879,3 +883,86 @@ a - secondy
 // document.body.appendChild(fragment);
 
 // use case : When you need to create multiple elements and add them to the DOM in a single operation, you can use createDocumentFragment to improve performance and reduce reflows.
+
+
+// what is redis ?
+// Redis is an open-source, in-memory data structure store that can be used as a database, cache, and message broker. It supports various data structures like strings, lists, sets, sorted sets, hashes, bitmaps, and hyperloglogs. Redis is known for its high performance, scalability, and versatility, making it a popular choice for real-time applications, caching, and messaging systems.
+
+// exmple
+// const redis = require('redis');
+// const client = redis.createClient();
+
+// client.on('connect', () => {
+//     console.log('Connected to Redis');
+// });
+
+// client.set
+// client.get
+// client.hset
+// client.hget
+
+// what is docker and how to use it or work ?
+// Docker is a platform that allows you to develop, deploy, and run applications in containers. Containers are lightweight, portable, and isolated environments that contain everything needed to run an application, including code, runtime, system tools, libraries, and settings. Docker provides tools and services to manage containers, build images, and orchestrate containerized applications.
+
+// Docker uses a client-server architecture with the Docker Engine as the server and the Docker CLI as the client. You can use the Docker CLI to interact with the Docker Engine and perform tasks like building images, running containers, and managing networks and volumes.
+
+// To use Docker, you need to install the Docker Engine on your machine and create a Dockerfile to define the configuration of your application. You can build a Docker image from the Dockerfile using the docker build command and run a container from the image using the docker run command. You can also use Docker Compose to define and run multi-container applications using a YAML configuration file.
+// example
+// Dockerfile
+// FROM node:14
+// WORKDIR /app
+// COPY package.json .
+// RUN npm install
+// COPY . .
+// EXPOSE 3000
+// CMD ["node", "index.js"]
+
+// docker build -t myapp .
+// docker run -p 3000:3000 myapp
+
+// what is kubernetes ?
+// Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It provides a platform for managing containerized workloads and services, ensuring that they run reliably and efficiently in a distributed environment.
+
+// Kubernetes uses a master-slave architecture with a control plane (master) that manages the cluster and worker nodes (slaves) that run the containers. The control plane includes components like the API server, scheduler, controller manager, and etcd, while the worker nodes run the containers using container runtimes like Docker or containerd.
+
+// Kubernetes allows you to define and deploy applications using YAML configuration files called manifests. You can define resources like pods, deployments, services, and ingresses in the manifests to describe the desired state of your application. Kubernetes uses the manifests to create and manage resources in the cluster, ensuring that the application runs as expected.
+
+// Kubernetes provides features like automatic scaling, self-healing, load balancing, service discovery, and rolling updates to manage containerized applications effectively. It allows you to run applications in a cloud-native, microservices architecture and scale them to meet changing demands.
+
+
+// what is microservices ?
+// Microservices is an architectural style that structures an application as a collection of small, loosely coupled services that are independently deployable and scalable. Each service in a microservices architecture is responsible for a specific business function and communicates with other services through APIs or messaging protocols.
+
+// Microservices allow you to break down a monolithic application into smaller, more manageable services that can be developed, deployed, and scaled independently. Each service can be developed using different technologies, languages, and frameworks, allowing teams to work autonomously and innovate faster.
+
+// Microservices provide benefits like improved scalability, resilience, flexibility, and maintainability. They allow you to scale individual services based on demand, isolate failures to prevent cascading failures, and update services without affecting the entire application. Microservices also enable continuous delivery, rapid development, and easier maintenance of complex applications.
+
+
+// what is REST API ?
+// REST API stands for Representational State Transfer Application Programming Interface. It is a set of rules and conventions for building and interacting with web services using the HTTP protocol. REST APIs use standard HTTP methods like GET, POST, PUT, DELETE to perform CRUD(Create, Read, Update, Delete) operations on resources.
+
+
+// what is GraphQL ?
+// GraphQL is a query language and runtime for APIs that allows clients to request only the data they need. It provides a more flexible and efficient way to interact with APIs compared to traditional REST APIs. With GraphQL, clients can specify the shape and structure of the data they want to retrieve, reducing over-fetching and under-fetching of data.
+
+
+// what is JWT ?
+// JWT stands for JSON Web Token. It is an open standard for securely transmitting information between parties as a JSON object. JWTs are commonly used for authentication and authorization in web applications. A JWT consists of three parts: a header, a payload, and a signature. The header contains metadata about the token, the payload contains the claims or data, and the signature is used to verify the integrity of the token.
+
+// what is OAuth ?
+
+// OAuth stands for Open Authorization. It is an open standard for access delegation that allows users to grant third-party applications access to their resources without sharing their credentials. OAuth is commonly used for authentication and authorization in web and mobile applications. It provides a secure and standardized way to authorize access to APIs and services.
+
+
+// what is CORS ?
+// CORS stands for Cross-Origin Resource Sharing. It is a security feature implemented by browsers that allows servers to specify who can access their resources. CORS prevents unauthorized cross-origin requests and protects sensitive data from being accessed by malicious websites. CORS policies are enforced by browsers and can be configured on the server to allow or restrict cross-origin requests.
+
+
+// what is CSRF ?
+// CSRF stands for Cross-Site Request Forgery. It is a type of attack where a malicious website tricks a user's browser into making unauthorized requests to a trusted website. CSRF attacks can lead to unauthorized actions being performed on behalf of the user, such as changing account settings or making financial transactions. To prevent CSRF attacks, websites can use techniques like CSRF tokens, same-site cookies, and referer checking.
+
+// what is XSS ?
+// XSS stands for Cross-Site Scripting. It is a type of security vulnerability that allows attackers to inject malicious scripts into web pages viewed by other users. XSS attacks can be used to steal sensitive information, hijack user sessions, or deface websites. To prevent XSS attacks, websites can sanitize user input, validate and encode output, and use Content Security Policy headers.
+
+// what is CI/CD ?
+// CI/CD stands for Continuous Integration/Continuous Deployment. It is a set of practices and tools that automate the process of building, testing, and deploying software. Continuous Integration involves automatically building and testing code changes as they are committed to a shared repository. Continuous Deployment involves automatically deploying code changes to production after passing tests and reviews. CI/CD helps teams deliver software faster, with higher quality and reliability.
