@@ -1,20 +1,25 @@
-// Find the longest common prefix among all strings in given array['flower', 'flow', 'flight']
+let str = "abcabcdhlmnopq";
+let alphates = "abcdefghijklmnopqrstuvwxyz".split("");
 
-// Input: ['flower', 'flow', 'flight']
-// Output: 'fl'
 
-function findCommonPrefix(arr, prefix) {
-    if (arr.length === 0) return prefix;
-    let first = arr[0];
-    for (let i = 0; i < first.length; i++) {
-        for (let j = 1; j < arr.length; j++) {
-            if (arr[j][i] !== first[i]) {
-                return prefix;
-            }
+function getAlphates(str) {
+    let result = "";
+    max = "";
+    for (let i = 1; i < str.length; i++) {
+
+        if (alphates.findIndex((item) => item === str[i - 1]) + 1 === alphates.findIndex((item) => item === str[i])) {
+            console.log(str[i - 1], str[i], alphates.findIndex((item) => item === str[i - 1]) + 1 === alphates.findIndex((item) => item === str[i]));
+            result += str[i];
+        } else {
+            result = str[i];
         }
-        prefix += first[i];
+        if (result.length > max.length) {
+            max = result;
+        }
     }
-    return prefix;
+
+    return max;
+
 }
 
-console.log(findCommonPrefix(['flower', 'flow', 'flight'], '')); // 'fl'
+console.log(getAlphates(str)); // abcdefghlmno

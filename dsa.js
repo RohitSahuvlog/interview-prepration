@@ -186,3 +186,30 @@ list2.next = new ListNode(6);
 list2.next.next = new ListNode(4);
 
 console.log(addTwoNumbers(list1, list2)); // 7 -> 0 -> 8
+
+
+let str = "abcabcdhlmnopq";
+let alphates = "abcdefghijklmnopqrstuvwxyz".split("");
+
+
+function getAlphates(str) {
+    let result = "";
+    max = "";
+    for (let i = 1; i < str.length; i++) {
+
+        if (alphates.findIndex((item) => item === str[i - 1]) + 1 === alphates.findIndex((item) => item === str[i])) {
+            console.log(str[i - 1], str[i], alphates.findIndex((item) => item === str[i - 1]) + 1 === alphates.findIndex((item) => item === str[i]));
+            result += str[i];
+        } else {
+            result = str[i];
+        }
+        if (result.length > max.length) {
+            max = result;
+        }
+    }
+
+    return max;
+
+}
+
+console.log(getAlphates(str)); // abcdefghlmno

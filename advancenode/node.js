@@ -76,6 +76,26 @@
 // 20. What are streams in Node.js ?
 // ans:Streams in Node.js are used to handle data transfer in an efficient and scalable way. Streams provide a way to read and write data in chunks, allowing applications to process data as it is received or sent. Streams can be used to read data from a file, write data to a file, or transfer data over a network. Node.js provides four types of streams: Readable, Writable, Duplex, and Transform.
 
+// example of streams in Node.js
+// const fs = require('fs');
+// const read
+// Stream = fs.createReadStream('input.txt');
+// const write
+// Stream = fs.createWriteStream('output.txt');
+
+// read
+// Stream.on('data', (chunk) => {
+//     write
+//     Stream.write(chunk);
+// });
+
+// read
+// Stream.on('end', () => {
+//     write
+//     Stream.end();
+// });
+
+
 // 21. Explain crypto module in Node.js.
 // ans : The crypto module in Node.js provides cryptographic functionality that allows developers to create secure applications. The crypto module provides a way to encrypt and decrypt data, generate secure random numbers, and create cryptographic hashes. The crypto module supports a wide range of cryptographic algorithms, such as AES, RSA, and SHA, and provides a secure way to handle sensitive data in Node.js applications.
 
@@ -129,6 +149,7 @@
 // Use named functions: Instead of using anonymous functions as callbacks, use named functions to make the code more readable and maintainable.
 // Use promises: Use promises to handle asynchronous operations and chain multiple asynchronous operations together in a cleaner and more readable way.
 // Use async/await: Use async/await to write asynchronous code in a synchronous style, making it easier to read and understand.
+
 // 30. What is body-parser in Node.js ?
 // ans:body-parser is a middleware module in Node.js that is used to parse incoming request bodies in a middleware function. body-parser parses the request body and populates the req.body object with the parsed data, making it easy to access the request body in a Node.js application. body-parser is commonly used in Node.js applications to handle form data, JSON data, and other types of request bodies.
 
@@ -172,8 +193,6 @@
 //         req.session.views = 1;
 //         res.send('Welcome to the session demo. Refresh the page!');
 //     }
-
-
 
 // 35. Explain the types of streams in Node.js.
 // 36. How can we implement authentication and authorization in Node.js ?
