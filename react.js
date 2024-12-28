@@ -66,269 +66,269 @@
 // a- main
 a - secondy
 
-    // What is Replication in MongoDB?
-    // ans = Replication is the process of synchronizing data across multiple servers. It provides redundancy and increases data availability with multiple copies of data on different database servers. Replication protects a database from the loss of a single server. It also allows you to recover from hardware failure and service interruptions.
-
-    // synchronize meaning that the data is consistent and up-to-date across all servers. Replication is commonly used in distributed systems to improve fault tolerance, scalability, and data availability. In MongoDB, replication is achieved through replica sets, which consist of multiple MongoDB instances that replicate data across servers. Replica sets provide automatic failover, data redundancy, and high availability for MongoDB databases.
+  // What is Replication in MongoDB?
+  // ans = Replication is the process of synchronizing data across multiple servers. It provides redundancy and increases data availability with multiple copies of data on different database servers. Replication protects a database from the loss of a single server. It also allows you to recover from hardware failure and service interruptions.
+
+  // synchronize meaning that the data is consistent and up-to-date across all servers. Replication is commonly used in distributed systems to improve fault tolerance, scalability, and data availability. In MongoDB, replication is achieved through replica sets, which consist of multiple MongoDB instances that replicate data across servers. Replica sets provide automatic failover, data redundancy, and high availability for MongoDB databases.
 
 
-    // What are Higher-Order Components in React?
-    // ans = Higher-Order Components (HOC) are a pattern in React that lets you reuse component logic. HOCs are custom functions that accept a component and return a new component. They are a way to share reusable code between components. HOCs are commonly used for cross-cutting concerns such as logging, authentication, and data fetching.
+  // What are Higher-Order Components in React?
+  // ans = Higher-Order Components (HOC) are a pattern in React that lets you reuse component logic. HOCs are custom functions that accept a component and return a new component. They are a way to share reusable code between components. HOCs are commonly used for cross-cutting concerns such as logging, authentication, and data fetching.
 
-    // What are advantages of using React Hooks?
-    // ans = React Hooks provide a more concise and readable way to manage state and side effects in functional components. They allow you to reuse stateful logic without changing your component hierarchy. Hooks also make it easier to share logic between components and avoid common pitfalls of class components.
+  // What are advantages of using React Hooks?
+  // ans = React Hooks provide a more concise and readable way to manage state and side effects in functional components. They allow you to reuse stateful logic without changing your component hierarchy. Hooks also make it easier to share logic between components and avoid common pitfalls of class components.
 
-    // What are the limitations of React?
-    // ans = React has a steep learning curve for beginners and can be challenging to set up and configure. It also requires a good understanding of JavaScript and JSX syntax. React can be less performant than other frameworks due to its virtual DOM implementation. It may also have compatibility issues with older browsers.
-
-    // What are the differences between a class component and Functional component?
-    // ans = Class components are ES6 classes that extend from React.Component and can have state and lifecycle methods. Functional components are simple functions that take props as an argument and return JSX. Functional components are easier to read and test, while class components have more features and flexibility.
-
-    // What are the key features of Node.js?
-    // ans = Node.js is a server-side platform built on Google Chrome's JavaScript Engine (V8 Engine). It uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
-
-    // What do you mean by Asynchronous API?
-    // ans = Asynchronous APIs allow multiple tasks to be performed concurrently without blocking the main thread. They use callbacks, promises, or async/await to handle asynchronous operations. Asynchronous APIs are commonly used in web development to fetch data from servers, handle user input, and perform background tasks.
-
-    // What is Callback Hell and What is the main cause of it?
-    // ans = Callback Hell is a situation in JavaScript where multiple nested callbacks make the code difficult to read and maintain. The main cause of Callback Hell is the asynchronous nature of JavaScript, which can lead to deeply nested callback functions. This can make the code hard to understand and debug.
-
-    // What is Reconciliation in ReactJS?
-    // ans = Reconciliation is the process of updating the DOM to match the virtual DOM in React. It is a key feature of React that allows components to efficiently update and render changes to the user interface. Reconciliation compares the virtual DOM with the previous virtual DOM and only updates the necessary parts of the DOM.
-
-    // What is Sharding in MongoDB?
-    // ans = Sharding is the process of storing data records across multiple machines to improve performance and scalability. It allows you to distribute data across multiple servers or clusters to handle large amounts of data and high traffic. Sharding is a key feature of MongoDB that helps to scale horizontally and improve data availability.
-
-    // What is the difference between returning a callback and just calling a callback?
-    // ans = Returning a callback means passing a function as an argument to another function and returning it from the function. Calling a callback means invoking the function passed as an argument to another function. Returning a callback allows you to pass the function around and call it later, while calling a callback executes the function immediately.
-
-    // When should we embed one document within another in MongoDB?
-    // ans = You should embed one document within another in MongoDB when the embedded document is a part of the parent document and does not exist independently. Embedding documents can improve query performance by reducing the number of queries needed to retrieve related data. It is suitable for one-to-one and one-to-many relationships.
-
-    // Does MongoDB support Foreign Key Constraints?
-    // ans = MongoDB does not support foreign key constraints like traditional relational databases. Instead, MongoDB uses references or embedded documents to represent relationships between data. You can manually enforce referential integrity in MongoDB by using application logic or third-party tools.
-
-    // Explain advantages of BSON over JSON in MangoDB?
-    // ans = BSON (Binary JSON) is a binary-encoded serialization of JSON-like documents that MongoDB uses to store data. BSON has several advantages over JSON, including support for additional data types, better performance, and efficient storage. BSON also includes features like date and binary data types that are not available in JSON.
-
-
-    // How can you achieve Transaction in MongoDB?
-    // ans = MongoDB supports multi-document transactions starting from version 4.0. You can achieve transactions in MongoDB using the multi-document ACID transactions feature. Transactions allow you to perform multiple operations on multiple documents in a single transaction, ensuring data consistency and integrity.
+  // What are the limitations of React?
+  // ans = React has a steep learning curve for beginners and can be challenging to set up and configure. It also requires a good understanding of JavaScript and JSX syntax. React can be less performant than other frameworks due to its virtual DOM implementation. It may also have compatibility issues with older browsers.
+
+  // What are the differences between a class component and Functional component?
+  // ans = Class components are ES6 classes that extend from React.Component and can have state and lifecycle methods. Functional components are simple functions that take props as an argument and return JSX. Functional components are easier to read and test, while class components have more features and flexibility.
+
+  // What are the key features of Node.js?
+  // ans = Node.js is a server-side platform built on Google Chrome's JavaScript Engine (V8 Engine). It uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
+
+  // What do you mean by Asynchronous API?
+  // ans = Asynchronous APIs allow multiple tasks to be performed concurrently without blocking the main thread. They use callbacks, promises, or async/await to handle asynchronous operations. Asynchronous APIs are commonly used in web development to fetch data from servers, handle user input, and perform background tasks.
+
+  // What is Callback Hell and What is the main cause of it?
+  // ans = Callback Hell is a situation in JavaScript where multiple nested callbacks make the code difficult to read and maintain. The main cause of Callback Hell is the asynchronous nature of JavaScript, which can lead to deeply nested callback functions. This can make the code hard to understand and debug.
+
+  // What is Reconciliation in ReactJS?
+  // ans = Reconciliation is the process of updating the DOM to match the virtual DOM in React. It is a key feature of React that allows components to efficiently update and render changes to the user interface. Reconciliation compares the virtual DOM with the previous virtual DOM and only updates the necessary parts of the DOM.
+
+  // What is Sharding in MongoDB?
+  // ans = Sharding is the process of storing data records across multiple machines to improve performance and scalability. It allows you to distribute data across multiple servers or clusters to handle large amounts of data and high traffic. Sharding is a key feature of MongoDB that helps to scale horizontally and improve data availability.
+
+  // What is the difference between returning a callback and just calling a callback?
+  // ans = Returning a callback means passing a function as an argument to another function and returning it from the function. Calling a callback means invoking the function passed as an argument to another function. Returning a callback allows you to pass the function around and call it later, while calling a callback executes the function immediately.
+
+  // When should we embed one document within another in MongoDB?
+  // ans = You should embed one document within another in MongoDB when the embedded document is a part of the parent document and does not exist independently. Embedding documents can improve query performance by reducing the number of queries needed to retrieve related data. It is suitable for one-to-one and one-to-many relationships.
+
+  // Does MongoDB support Foreign Key Constraints?
+  // ans = MongoDB does not support foreign key constraints like traditional relational databases. Instead, MongoDB uses references or embedded documents to represent relationships between data. You can manually enforce referential integrity in MongoDB by using application logic or third-party tools.
+
+  // Explain advantages of BSON over JSON in MangoDB?
+  // ans = BSON (Binary JSON) is a binary-encoded serialization of JSON-like documents that MongoDB uses to store data. BSON has several advantages over JSON, including support for additional data types, better performance, and efficient storage. BSON also includes features like date and binary data types that are not available in JSON.
+
+
+  // How can you achieve Transaction in MongoDB?
+  // ans = MongoDB supports multi-document transactions starting from version 4.0. You can achieve transactions in MongoDB using the multi-document ACID transactions feature. Transactions allow you to perform multiple operations on multiple documents in a single transaction, ensuring data consistency and integrity.
 
-    // What does Node.js handle Child Threads?
-    // ans = Node.js is single-threaded and uses an event-driven, non-blocking I/O model to handle concurrency. It does not create child threads for handling multiple requests. Instead, it uses worker threads and the libuv library to manage asynchronous operations and perform I/O tasks in the background.
+  // What does Node.js handle Child Threads?
+  // ans = Node.js is single-threaded and uses an event-driven, non-blocking I/O model to handle concurrency. It does not create child threads for handling multiple requests. Instead, it uses worker threads and the libuv library to manage asynchronous operations and perform I/O tasks in the background.
 
-    // How does concurrency work in Node.js?
-    // ans = Concurrency in Node.js is achieved through the event loop and non-blocking I/O operations. Node.js uses a single-threaded event loop to handle multiple requests concurrently. It processes I/O operations asynchronously and delegates them to worker threads, allowing the main thread to continue executing other tasks.
+  // How does concurrency work in Node.js?
+  // ans = Concurrency in Node.js is achieved through the event loop and non-blocking I/O operations. Node.js uses a single-threaded event loop to handle multiple requests concurrently. It processes I/O operations asynchronously and delegates them to worker threads, allowing the main thread to continue executing other tasks.
 
-    // How to avoid Callback Hell in Node.js?
-    // ans = You can avoid Callback Hell in Node.js by using promises, async/await, or libraries like async.js to handle asynchronous operations. Promises and async/await provide a more readable and maintainable way to handle asynchronous code by chaining multiple operations and handling errors more effectively.
+  // How to avoid Callback Hell in Node.js?
+  // ans = You can avoid Callback Hell in Node.js by using promises, async/await, or libraries like async.js to handle asynchronous operations. Promises and async/await provide a more readable and maintainable way to handle asynchronous code by chaining multiple operations and handling errors more effectively.
 
-    // How do you handle backend routing in a MERN application?
-    // ans = In a MERN application, you can handle backend routing using Express.js, a Node.js web application framework. Express.js allows you to define routes for different HTTP methods and URLs, handle requests, and send responses. You can create RESTful APIs and route requests to specific controllers or middleware functions.
+  // How do you handle backend routing in a MERN application?
+  // ans = In a MERN application, you can handle backend routing using Express.js, a Node.js web application framework. Express.js allows you to define routes for different HTTP methods and URLs, handle requests, and send responses. You can create RESTful APIs and route requests to specific controllers or middleware functions.
 
-    // How do you manage state in a MERN application, and what tools do you use for this?
-    // ans = In a MERN application, you can manage state using React's built-in state management and context API. You can use React's useState and useEffect hooks to manage local component state and handle side effects. For global state management, you can use libraries like Redux or React Context API to share state between components.
+  // How do you manage state in a MERN application, and what tools do you use for this?
+  // ans = In a MERN application, you can manage state using React's built-in state management and context API. You can use React's useState and useEffect hooks to manage local component state and handle side effects. For global state management, you can use libraries like Redux or React Context API to share state between components.
 
-    // Can you give an example of how you would optimize the performance of a MERN application?
-    // ans = To optimize the performance of a MERN application, you can use techniques like code splitting, lazy loading, server-side rendering, caching, and optimizing images and assets. You can also minify and bundle your code, reduce the number of HTTP requests, and use a content delivery network (CDN) to improve loading times.
+  // Can you give an example of how you would optimize the performance of a MERN application?
+  // ans = To optimize the performance of a MERN application, you can use techniques like code splitting, lazy loading, server-side rendering, caching, and optimizing images and assets. You can also minify and bundle your code, reduce the number of HTTP requests, and use a content delivery network (CDN) to improve loading times.
 
-    // How do you test the components and functions of a MERN application?
-    // Have you ever encountered a problem with the MERN stack, and if so, how did you resolve it?
-    // Check out our tailor-made MERN Stack Developer Test, which can be customized to screen candidates before the interview.
-    // MERN Stack Developer Interview Questions for Experienced Developers
-    // Here is a list of MERN stack interview questions to thoroughly test candidates in a senior position:
-    // What is a stub in Node.js?
-    // Explain the concept of a thread pool. Which library handles it in Node.js?
-    // What are smart components and dumb components?
-    // What are the key features of NodeJS? What are its challenges?
-    // What is occasion circle in NodeJS?
-    // What do you understand by dependency injection? Why is it useful?
-    // State the IDEs that are used in the development of Node.js.
-    // What is REPL under Node.js? How does it work?
-    // What is the difference between linear search and binary search?
-    // What is the difference between Node.js, AJAX, and jQuery?
-    // What do you understand by containerization?
-    // What is a test pyramid? How do you actualize the test pyramid when examining HTTP APIs?
-    // What is the purpose of indexing in MongoDB?
-    // Explain the difference between classes and interfaces in TypeScript.
-    // What are decorators in typescript? How to use them?
-    // What do you understand by cross-site scripting?
-    // What is AOT and JIT compiler in Angular?
-    // What is the purpose of an event emitter under NodeJS?
-    // What is NPM in NodeJS? What is its functionality?
-    // What are Higher-Order Components (HOC) in React?
-    // What is Callback Hell, and what is the leading cause of it?
-    // How to avoid Callback Hell in Node.js?
-    // How does Node.js handle child threads?
-    // What is concurrency in Node.js? How does it work?
-    // What is the difference between returning a callback and just calling a callback?
-    // What is sharding in MongoDB? How to use it?
-    // What is the difference between partition and sharding in MongoDB?
-    // When should you consider embedding documents in MongoDB?
-    // Can you have foreign keys in MongoDB? What is the alternative to a foreign key in MongoDB?
-    // What is an event loop in Node JS?
+  // How do you test the components and functions of a MERN application?
+  // Have you ever encountered a problem with the MERN stack, and if so, how did you resolve it?
+  // Check out our tailor-made MERN Stack Developer Test, which can be customized to screen candidates before the interview.
+  // MERN Stack Developer Interview Questions for Experienced Developers
+  // Here is a list of MERN stack interview questions to thoroughly test candidates in a senior position:
+  // What is a stub in Node.js?
+  // Explain the concept of a thread pool. Which library handles it in Node.js?
+  // What are smart components and dumb components?
+  // What are the key features of NodeJS? What are its challenges?
+  // What is occasion circle in NodeJS?
+  // What do you understand by dependency injection? Why is it useful?
+  // State the IDEs that are used in the development of Node.js.
+  // What is REPL under Node.js? How does it work?
+  // What is the difference between linear search and binary search?
+  // What is the difference between Node.js, AJAX, and jQuery?
+  // What do you understand by containerization?
+  // What is a test pyramid? How do you actualize the test pyramid when examining HTTP APIs?
+  // What is the purpose of indexing in MongoDB?
+  // Explain the difference between classes and interfaces in TypeScript.
+  // What are decorators in typescript? How to use them?
+  // What do you understand by cross-site scripting?
+  // What is AOT and JIT compiler in Angular?
+  // What is the purpose of an event emitter under NodeJS?
+  // What is NPM in NodeJS? What is its functionality?
+  // What are Higher-Order Components (HOC) in React?
+  // What is Callback Hell, and what is the leading cause of it?
+  // How to avoid Callback Hell in Node.js?
+  // How does Node.js handle child threads?
+  // What is concurrency in Node.js? How does it work?
+  // What is the difference between returning a callback and just calling a callback?
+  // What is sharding in MongoDB? How to use it?
+  // What is the difference between partition and sharding in MongoDB?
+  // When should you consider embedding documents in MongoDB?
+  // Can you have foreign keys in MongoDB? What is the alternative to a foreign key in MongoDB?
+  // What is an event loop in Node JS?
 
 
 
 
-    // What is Memory Leak? How can we avoid?
-    // ans = A memory leak occurs when a program allocates memory but fails to release it, leading to a gradual decrease in available memory. Memory leaks can cause performance issues, crashes, and system instability. To avoid memory leaks, you can use tools like memory profilers, garbage collection, and proper memory management practices.
-    // example
-    // function createLeak() {
-    // const array = [];
-    // setInterval(() => {
-    // for (let i = 0; i < 1000; i++) {
-    // array.push(new Array(1000).join('*'));
-    // }
-    // }, 1000);
-    // }
-    // createLeak();
-    // In this example, the createLeak function creates a memory leak by continuously pushing large arrays into the array variable without releasing them. This can lead to memory exhaustion and performance issues over time.
-    // releasing meaning that the memory is not being used anymore and can be freed up for other processes. In JavaScript, memory leaks can occur when objects are not properly dereferenced or when circular references prevent garbage collection from reclaiming memory. To avoid memory leaks in JavaScript, you should be mindful of how you create and manage objects, avoid circular references, and use tools like memory profilers to identify and fix memory leaks in your code.
+  // What is Memory Leak? How can we avoid?
+  // ans = A memory leak occurs when a program allocates memory but fails to release it, leading to a gradual decrease in available memory. Memory leaks can cause performance issues, crashes, and system instability. To avoid memory leaks, you can use tools like memory profilers, garbage collection, and proper memory management practices.
+  // example
+  // function createLeak() {
+  // const array = [];
+  // setInterval(() => {
+  // for (let i = 0; i < 1000; i++) {
+  // array.push(new Array(1000).join('*'));
+  // }
+  // }, 1000);
+  // }
+  // createLeak();
+  // In this example, the createLeak function creates a memory leak by continuously pushing large arrays into the array variable without releasing them. This can lead to memory exhaustion and performance issues over time.
+  // releasing meaning that the memory is not being used anymore and can be freed up for other processes. In JavaScript, memory leaks can occur when objects are not properly dereferenced or when circular references prevent garbage collection from reclaiming memory. To avoid memory leaks in JavaScript, you should be mindful of how you create and manage objects, avoid circular references, and use tools like memory profilers to identify and fix memory leaks in your code.
 
 
-    // what is the dynamic index in typescript that is used to access the object properties?
-    // ans = Dynamic index signatures in TypeScript allow you to define an index signature that can accept any property name and type. This allows you to access object properties dynamically using square bracket notation. Dynamic index signatures are useful when working with objects that have unknown or dynamic property names.
-    // example
-    // interface User {
-    // [key: string]: string;
-    // }
-    // const user: User = {
-    // name: 'John',
-    // age: '30',
-    // email:'john at john.com'
-    // };
-    // console.log(user['name']); // John
+  // what is the dynamic index in typescript that is used to access the object properties?
+  // ans = Dynamic index signatures in TypeScript allow you to define an index signature that can accept any property name and type. This allows you to access object properties dynamically using square bracket notation. Dynamic index signatures are useful when working with objects that have unknown or dynamic property names.
+  // example
+  // interface User {
+  // [key: string]: string;
+  // }
+  // const user: User = {
+  // name: 'John',
+  // age: '30',
+  // email:'john at john.com'
+  // };
+  // console.log(user['name']); // John
 
 
-    // what are the two algothrithm that react build on?
-    // ans = React is built on two main algorithms: the Virtual DOM and Reconciliation. The Virtual DOM is a lightweight copy of the actual DOM that React uses to optimize rendering performance. Reconciliation is the process of updating the actual DOM to match the Virtual DOM efficiently. These algorithms help React to efficiently update and render changes to the user interface, resulting in a fast and responsive user experience.
+  // what are the two algothrithm that react build on?
+  // ans = React is built on two main algorithms: the Virtual DOM and Reconciliation. The Virtual DOM is a lightweight copy of the actual DOM that React uses to optimize rendering performance. Reconciliation is the process of updating the actual DOM to match the Virtual DOM efficiently. These algorithms help React to efficiently update and render changes to the user interface, resulting in a fast and responsive user experience.
 
-    // what is the lift state up in react?
-    // ans = Lifting state up in React is a pattern where you move the state from child components to their parent component. This allows you to share state between multiple components and keep the state in sync across the application. By lifting state up, you can create a single source of truth for the state and pass it down to child components as props.
+  // what is the lift state up in react?
+  // ans = Lifting state up in React is a pattern where you move the state from child components to their parent component. This allows you to share state between multiple components and keep the state in sync across the application. By lifting state up, you can create a single source of truth for the state and pass it down to child components as props.
 
-    // "[]" == "[]" // true
-    // [] == [] // false
+  // "[]" == "[]" // true
+  // [] == [] // false
 
 
 
 
-    // what are the primitive types and union types in typescript?
-    // ans = In TypeScript, primitive types are basic data types like number, string, boolean, null, undefined, and symbol. Union types allow you to combine multiple types into a single type. You can use union types to define variables that can have multiple possible types. For example, you can define a variable that can be either a number or a string using a union type.
+  // what are the primitive types and union types in typescript?
+  // ans = In TypeScript, primitive types are basic data types like number, string, boolean, null, undefined, and symbol. Union types allow you to combine multiple types into a single type. You can use union types to define variables that can have multiple possible types. For example, you can define a variable that can be either a number or a string using a union type.
 
-    // how does Js handling memory ?
-    // ans = JavaScript uses automatic memory management through garbage collection to manage memory allocation and deallocation. The JavaScript engine allocates memory for objects and variables dynamically and automatically frees up memory when it is no longer needed. Garbage collection identifies and removes unused objects to prevent memory leaks and optimize memory usage.
+  // how does Js handling memory ?
+  // ans = JavaScript uses automatic memory management through garbage collection to manage memory allocation and deallocation. The JavaScript engine allocates memory for objects and variables dynamically and automatically frees up memory when it is no longer needed. Garbage collection identifies and removes unused objects to prevent memory leaks and optimize memory usage.
 
 
-    // What are synthetic events in React ? and use?
-    // Synthetic events are the objects which act as a cross-browser wrapper around the browser’s native event. They combine the behavior of different browsers into one API. This is done to make sure that the events show consistent properties across different browsers.
+  // What are synthetic events in React ? and use?
+  // Synthetic events are the objects which act as a cross-browser wrapper around the browser’s native event. They combine the behavior of different browsers into one API. This is done to make sure that the events show consistent properties across different browsers.
 
-    // example: Sure! Synthetic events in React are like a helpful middleman between your code and the browser's built-in events. They make sure everything works the same way across different browsers, so you don't have to worry about browser-specific quirks.
+  // example: Sure! Synthetic events in React are like a helpful middleman between your code and the browser's built-in events. They make sure everything works the same way across different browsers, so you don't have to worry about browser-specific quirks.
 
-    // Why Use Synthetic Events ?
-    // Consistency : They make sure events behave the same way no matter which browser you're using.
-    // Performance: They are designed to be efficient, reusing event objects to save memory.
-    // Ease of Use: They provide a simple and uniform way to handle events in your React applications.
+  // Why Use Synthetic Events ?
+  // Consistency : They make sure events behave the same way no matter which browser you're using.
+  // Performance: They are designed to be efficient, reusing event objects to save memory.
+  // Ease of Use: They provide a simple and uniform way to handle events in your React applications.
 
-    // React uses the event delegation technique to listen to events at the root level and then it delegates the responsibility of handling the events to the respective components. This is done to improve the performance of the application.
+  // React uses the event delegation technique to listen to events at the root level and then it delegates the responsibility of handling the events to the respective components. This is done to improve the performance of the application.
 
 
 
 
-    //2. Explain the difference between Real DOM and Virtual DOM ?
-    // ans = The Real DOM is the actual DOM that is rendered by the browser. It is a tree-like structure that represents the HTML elements of a web page. The Real DOM is slow and inefficient because any changes to the DOM trigger a reflow and repaint of the entire page.
+  //2. Explain the difference between Real DOM and Virtual DOM ?
+  // ans = The Real DOM is the actual DOM that is rendered by the browser. It is a tree-like structure that represents the HTML elements of a web page. The Real DOM is slow and inefficient because any changes to the DOM trigger a reflow and repaint of the entire page.
 
-    // The Virtual DOM is a lightweight copy of the Real DOM that is maintained by React. It is a JavaScript representation of the Real DOM that React uses to optimize rendering performance. The Virtual DOM is fast and efficient because it allows React to batch updates and only update the parts of the DOM that have changed.
+  // The Virtual DOM is a lightweight copy of the Real DOM that is maintained by React. It is a JavaScript representation of the Real DOM that React uses to optimize rendering performance. The Virtual DOM is fast and efficient because it allows React to batch updates and only update the parts of the DOM that have changed.
 
 
-    // 3.What are the key features of React?
-    // ans = React is a JavaScript library for building user interfaces. It has several key features that make it popular among developers:
+  // 3.What are the key features of React?
+  // ans = React is a JavaScript library for building user interfaces. It has several key features that make it popular among developers:
 
-    // Declarative: React allows you to create interactive UIs using a declarative syntax that makes the code more predictable and easier to debug.
+  // Declarative: React allows you to create interactive UIs using a declarative syntax that makes the code more predictable and easier to debug.
 
-    // Component-Based: React uses a component-based architecture that allows you to break down the UI into reusable components. This makes it easier to build and maintain complex applications.
+  // Component-Based: React uses a component-based architecture that allows you to break down the UI into reusable components. This makes it easier to build and maintain complex applications.
 
-    // Virtual DOM: React uses a Virtual DOM to optimize rendering performance by only updating the parts of the DOM that have changed. This results in faster rendering and a better user experience.
+  // Virtual DOM: React uses a Virtual DOM to optimize rendering performance by only updating the parts of the DOM that have changed. This results in faster rendering and a better user experience.
 
-    // JSX: React uses JSX, a syntax extension that allows you to write HTML-like code in JavaScript. JSX makes it easier to create and maintain UI components.
+  // JSX: React uses JSX, a syntax extension that allows you to write HTML-like code in JavaScript. JSX makes it easier to create and maintain UI components.
 
-    // One-Way Data Binding: React uses one-way data binding to ensure that the data flows in a single direction, from parent components to child components. This helps to maintain the integrity of the data and prevent side effects.
+  // One-Way Data Binding: React uses one-way data binding to ensure that the data flows in a single direction, from parent components to child components. This helps to maintain the integrity of the data and prevent side effects.
 
-    // React Hooks: React Hooks are functions that allow you to use state and other React features in functional components. Hooks provide a more concise and readable way to manage state and side effects in React applications.
+  // React Hooks: React Hooks are functions that allow you to use state and other React features in functional components. Hooks provide a more concise and readable way to manage state and side effects in React applications.
 
-    // 4. What is JSX ?
-    // ans = JSX (JavaScript XML) is a syntax extension for JavaScript that allows you to write HTML-like code in JavaScript. JSX makes it easier to create and maintain UI components in React by combining the power of JavaScript and HTML. JSX is not a separate templating language, but a syntax extension that allows you to write XML-like code in JavaScript.
+  // 4. What is JSX ?
+  // ans = JSX (JavaScript XML) is a syntax extension for JavaScript that allows you to write HTML-like code in JavaScript. JSX makes it easier to create and maintain UI components in React by combining the power of JavaScript and HTML. JSX is not a separate templating language, but a syntax extension that allows you to write XML-like code in JavaScript.
 
-    // 5. Why can't browsers read JSX ?
-    // ans = Browsers cannot read JSX directly because JSX is not valid JavaScript syntax. JSX is a syntax extension for JavaScript that allows you to write HTML-like code in JavaScript. Browsers can only understand JavaScript, HTML, and CSS, so JSX code needs to be transpiled into plain JavaScript before it can be rendered in the browser.
+  // 5. Why can't browsers read JSX ?
+  // ans = Browsers cannot read JSX directly because JSX is not valid JavaScript syntax. JSX is a syntax extension for JavaScript that allows you to write HTML-like code in JavaScript. Browsers can only understand JavaScript, HTML, and CSS, so JSX code needs to be transpiled into plain JavaScript before it can be rendered in the browser.
 
 
-    // 6. What are React components ?
-    // ans = React components are the building blocks of a React application. They are reusable UI elements that encapsulate the logic and presentation of a part of the user interface. React components can be either functional components or class components. Functional components are simple functions that take props as an argument and return JSX, while class components are ES6 classes that extend from React.Component and can have state and lifecycle methods.
-    // remember key words : reusable UI elements, encapsulate the logic and presentation, functional components, class components, props, JSX, state, lifecycle methods.
+  // 6. What are React components ?
+  // ans = React components are the building blocks of a React application. They are reusable UI elements that encapsulate the logic and presentation of a part of the user interface. React components can be either functional components or class components. Functional components are simple functions that take props as an argument and return JSX, while class components are ES6 classes that extend from React.Component and can have state and lifecycle methods.
+  // remember key words : reusable UI elements, encapsulate the logic and presentation, functional components, class components, props, JSX, state, lifecycle methods.
 
 
-    // 7. Differentiate between a Class component and a Functional component.
-    // ans = Class components are ES6 classes that extend from React.Component and can have state and lifecycle methods. They are used for more complex components that require state management and lifecycle methods. Functional components are simple functions that take props as an argument and return JSX. They are used for presentational components that do not require state or lifecycle methods.
+  // 7. Differentiate between a Class component and a Functional component.
+  // ans = Class components are ES6 classes that extend from React.Component and can have state and lifecycle methods. They are used for more complex components that require state management and lifecycle methods. Functional components are simple functions that take props as an argument and return JSX. They are used for presentational components that do not require state or lifecycle methods.
 
-    // remember key words : Class components, ES6 classes, React.Component, state, lifecycle methods, Functional components, simple functions, props, JSX, presentational components.
+  // remember key words : Class components, ES6 classes, React.Component, state, lifecycle methods, Functional components, simple functions, props, JSX, presentational components.
 
 
-    // 8. What is the difference between state and props in React ?
-    // ans = State and props are two key concepts in React that are used to manage data and pass data between components.
+  // 8. What is the difference between state and props in React ?
+  // ans = State and props are two key concepts in React that are used to manage data and pass data between components.
 
-    // State is a built-in feature of React that allows components to store and manage their own data. State is mutable and can be updated using the setState method. State is local to a component and can only be accessed and modified by that component.
+  // State is a built-in feature of React that allows components to store and manage their own data. State is mutable and can be updated using the setState method. State is local to a component and can only be accessed and modified by that component.
 
-    // 9. What are React hooks ? Name some common hooks.
-    // ans = React hooks are functions that let you use state and other React features in functional components. Hooks provide a more concise and readable way to manage state and side effects in React applications. Some common hooks in React are useState, useEffect, useContext, useReducer, useMemo, useCallback, useRef, and useLayoutEffect.
+  // 9. What are React hooks ? Name some common hooks.
+  // ans = React hooks are functions that let you use state and other React features in functional components. Hooks provide a more concise and readable way to manage state and side effects in React applications. Some common hooks in React are useState, useEffect, useContext, useReducer, useMemo, useCallback, useRef, and useLayoutEffect.
 
 
-    // 10. How do useState and useEffect work in React ?
-    // ans = The useState hook is used to add state to functional components in React. It takes an initial state as an argument and returns an array with the current state value and a function to update the state. You can use the useState hook to manage local component state in functional components.
+  // 10. How do useState and useEffect work in React ?
+  // ans = The useState hook is used to add state to functional components in React. It takes an initial state as an argument and returns an array with the current state value and a function to update the state. You can use the useState hook to manage local component state in functional components.
 
 
-    // The useEffect hook is used to perform side effects in functional components. It takes a callback function as an argument and runs the callback after the component has rendered. You can use the useEffect hook to fetch data, subscribe to events, and perform other side effects in functional components.
+  // The useEffect hook is used to perform side effects in functional components. It takes a callback function as an argument and runs the callback after the component has rendered. You can use the useEffect hook to fetch data, subscribe to events, and perform other side effects in functional components.
 
-    // 11. What is the importance of key in React ?
-    // ans = The key prop is a special attribute in React that is used to identify elements in a list. Keys help React identify which items have changed, are added, or are removed in a list. Keys should be unique within the same list and stable across re-renders to ensure proper reconciliation of the Virtual DOM.
+  // 11. What is the importance of key in React ?
+  // ans = The key prop is a special attribute in React that is used to identify elements in a list. Keys help React identify which items have changed, are added, or are removed in a list. Keys should be unique within the same list and stable across re-renders to ensure proper reconciliation of the Virtual DOM.
 
-    // 12. Explain the concept of lifting state up in React.
-    // ans = Lifting state up in React is a pattern where you move the state from child components to their parent component. This allows you to share state between multiple components and keep the state in sync across the application. By lifting state up, you can create a single source of truth for the state and pass it down to child components as props.
+  // 12. Explain the concept of lifting state up in React.
+  // ans = Lifting state up in React is a pattern where you move the state from child components to their parent component. This allows you to share state between multiple components and keep the state in sync across the application. By lifting state up, you can create a single source of truth for the state and pass it down to child components as props.
 
-    // 13. How does one pass data between components in React ?
-    // ans = You can pass data between components in React using props, context, and state. Props are used to pass data from parent components to child components. Context allows you to share data between components without passing props manually. State is used to manage local component state and update the UI based on changes in data.
+  // 13. How does one pass data between components in React ?
+  // ans = You can pass data between components in React using props, context, and state. Props are used to pass data from parent components to child components. Context allows you to share data between components without passing props manually. State is used to manage local component state and update the UI based on changes in data.
 
-    // 14. What are the new features introduced in React 18 ?
-    // ans = React 18 introduces several new features and improvements, including concurrent rendering, automatic batching, concurrent features, server-side rendering enhancements, and React Server Components. React 18 also includes new APIs like useTransition, startTransition, useDeferredValue, and improved Suspense for handling asynchronous data loading.
+  // 14. What are the new features introduced in React 18 ?
+  // ans = React 18 introduces several new features and improvements, including concurrent rendering, automatic batching, concurrent features, server-side rendering enhancements, and React Server Components. React 18 also includes new APIs like useTransition, startTransition, useDeferredValue, and improved Suspense for handling asynchronous data loading.
 
 
-    // 15. What is concurrent rendering in React 18 ?
-    // ans = Concurrent rendering is a new feature in React 18 that allows React to work on multiple tasks concurrently. It enables React to pause and resume rendering work to improve performance and responsiveness. Concurrent rendering helps to prioritize user interactions and ensure smooth and interactive user experiences in React applications.
+  // 15. What is concurrent rendering in React 18 ?
+  // ans = Concurrent rendering is a new feature in React 18 that allows React to work on multiple tasks concurrently. It enables React to pause and resume rendering work to improve performance and responsiveness. Concurrent rendering helps to prioritize user interactions and ensure smooth and interactive user experiences in React applications.
 
 
-    // 16. How does automatic batching work in React 18 ?
-    // ans : Automatic batching is a new feature in React 18 that allows React to batch multiple state updates into a single render cycle. It automatically batches state updates that occur within the same event loop to reduce the number of re-renders and improve performance. Automatic batching helps to optimize rendering performance and reduce unnecessary updates in React applications.
+  // 16. How does automatic batching work in React 18 ?
+  // ans : Automatic batching is a new feature in React 18 that allows React to batch multiple state updates into a single render cycle. It automatically batches state updates that occur within the same event loop to reduce the number of re-renders and improve performance. Automatic batching helps to optimize rendering performance and reduce unnecessary updates in React applications.
 
-    // 17. What is the useTransition hook, and how does it work ?
-    // ans = The useTransition hook is a new feature in React 18 that allows you to control the loading state of asynchronous data in React applications. It returns a transition state that indicates whether the data is still loading or has been loaded. You can use the useTransition hook to show loading indicators and improve the user experience when fetching data asynchronously.
+  // 17. What is the useTransition hook, and how does it work ?
+  // ans = The useTransition hook is a new feature in React 18 that allows you to control the loading state of asynchronous data in React applications. It returns a transition state that indicates whether the data is still loading or has been loaded. You can use the useTransition hook to show loading indicators and improve the user experience when fetching data asynchronously.
 
-    // 18. Explain the working of useDeferredValue in React 18.
-    // ans = The useDeferredValue hook is a new feature in React 18 that allows you to defer the rendering of non-critical data in React applications. It returns a deferred value that React can prioritize for rendering later. You can use the useDeferredValue hook to improve performance by deferring the rendering of less important data until after the critical data has been rendered.
+  // 18. Explain the working of useDeferredValue in React 18.
+  // ans = The useDeferredValue hook is a new feature in React 18 that allows you to defer the rendering of non-critical data in React applications. It returns a deferred value that React can prioritize for rendering later. You can use the useDeferredValue hook to improve performance by deferring the rendering of less important data until after the critical data has been rendered.
 
-    // 19. What is Suspense in React, and how does it work ?
-    // ans = Suspense is a feature in React that allows components to suspend rendering while waiting for asynchronous data to load. Suspense helps to manage loading states and handle data fetching in React applications. It allows you to show loading indicators, error boundaries, and fallback UIs while fetching data asynchronously.
+  // 19. What is Suspense in React, and how does it work ?
+  // ans = Suspense is a feature in React that allows components to suspend rendering while waiting for asynchronous data to load. Suspense helps to manage loading states and handle data fetching in React applications. It allows you to show loading indicators, error boundaries, and fallback UIs while fetching data asynchronously.
 
-    // 20. How has React 18 improved Suspense ?
-    // ans = React 18 has improved Suspense by introducing new features like useTransition, startTransition, and useDeferredValue. These features allow you to control the loading state of asynchronous data, defer rendering of non-critical data, and improve the user experience when fetching data in React applications. React 18 also includes enhancements to Suspense for server-side rendering and React Server Components.
+  // 20. How has React 18 improved Suspense ?
+  // ans = React 18 has improved Suspense by introducing new features like useTransition, startTransition, and useDeferredValue. These features allow you to control the loading state of asynchronous data, defer rendering of non-critical data, and improve the user experience when fetching data in React applications. React 18 also includes enhancements to Suspense for server-side rendering and React Server Components.
 
-    // 21. What is the new startTransition function in React 18 ?
-    // ans = The startTransition function is a new feature in React 18 that allows you to start a transition to update the UI in React applications. It lets you defer rendering updates until after the transition has completed, improving performance and responsiveness. You can use the startTransition function to prioritize user interactions and ensure smooth and interactive user experiences in React applications.
+  // 21. What is the new startTransition function in React 18 ?
+  // ans = The startTransition function is a new feature in React 18 that allows you to start a transition to update the UI in React applications. It lets you defer rendering updates until after the transition has completed, improving performance and responsiveness. You can use the startTransition function to prioritize user interactions and ensure smooth and interactive user experiences in React applications.
 
-    // import { startTransition } from 'react';
+  // import { startTransition } from 'react';
 
-    // startTransition(() => {
-    / // Update state or perform an operation that can be deferred
+  // startTransition(() => {
+  / // Update state or perform an operation that can be deferred
 // });
 
 
@@ -536,9 +536,9 @@ a - secondy
 
 // const App = () => {
 / return (
-    / <Router>
-        / <Switch>
-            /           <Route path="/users/:id" component={UserDetails} />
+  / <Router>
+    / <Switch>
+      /           <Route path="/users/:id" component={UserDetails} />
 //             </Switch>
 //         </Router>
 
@@ -986,11 +986,47 @@ a - secondy
 // what is CI/CD ?
 // CI/CD stands for Continuous Integration/Continuous Deployment. It is a set of practices and tools that automate the process of building, testing, and deploying software. Continuous Integration involves automatically building and testing code changes as they are committed to a shared repository. Continuous Deployment involves automatically deploying code changes to production after passing tests and reviews. CI/CD helps teams deliver software faster, with higher quality and reliability.
 
+
+
+
 // 1. Explain the concept of lazy loading and how it can improve performance?
 // ans = Lazy loading is a technique used to defer the loading of non-essential resources until they are needed. It helps to improve performance by reducing the initial page load time and only loading resources when they are required. Lazy loading can be used for images, videos, scripts, and other assets to optimize the loading time of a web page and improve the user experience.
 
 // 2. What are Web Workers and how can they be used to improve performance ?
 // answer : Web Workers are a browser feature that allows you to run JavaScript code in a separate thread from the main thread. They can be used to perform computationally intensive tasks, such as data processing, without blocking the main thread and affecting the user interface. Web Workers help to improve performance by offloading tasks to background threads and keeping the main thread responsive and performant.
+// Check if the browser supports Web Workers
+// if (window.Worker) {
+//     // Create a new Worker instance
+//     const worker = new Worker('worker.js');
+
+//     // Send a message to the Worker
+//     worker.postMessage('Hello, Worker!');
+
+//     // Listen for messages from the Worker
+//     worker.onmessage = function (event) {
+//         console.log('Message from Worker:', event.data);
+//     };
+
+//     // Handle errors from the Worker
+//     worker.onerror = function (error) {
+//         console.error('Worker error:', error);
+//     };
+// } else {
+//     console.log('Web Workers are not supported in this browser.');
+// }
+
+// // Listen for messages from the main thread
+// self.onmessage = function (event) {
+//     console.log('Message from main script:', event.data);
+
+//     // Perform some computation or task
+//     let result = event.data + ' - processed by Worker';
+
+//     // Send the result back to the main thread
+//     self.postMessage(result);
+// };
+
+
 
 // 3. Explain the concept of caching and how it can be used to improve performance.
 // answer: Caching is a technique used to store copies of resources like images, scripts, and stylesheets locally on the client's device. It helps to reduce the number of network requests and improve performance by serving cached resources instead of fetching them from the server. Caching can be implemented using browser caching, service workers, and CDNs to store and serve cached resources efficiently.
@@ -1029,21 +1065,114 @@ a - secondy
 // 17. Explain the concept of the Singleton pattern.
 // answers: The Singleton pattern is a creational design pattern that ensures a class has only one instance and provides a global point of access to that instance. It is commonly used to manage shared resources, configuration settings, or global state in an application. The Singleton pattern restricts the instantiation of a class to a single
 // instance and provides a way to access that instance globally. It can be implemented using a static instance variable, a private constructor, and a static method to access the instance.
+// class Singleton {
+//     constructor() {
+//         if (!Singleton.instance) {
+//             Singleton.instance = this;
+//         }
+//         return Singleton.instance;
+//     }
+// }
+// const instance1 = new Singleton();
+// const instance2 = new Singleton();
+// console.log(instance1 === instance2); // true
+
 
 // 18. What is the Factory pattern and how is it used ?
 // answers: The Factory pattern is a creational design pattern that provides an interface for creating objects without specifying their concrete classes. It allows you to create objects of different types based on a common interface or superclass. The Factory pattern decouples the creation of objects from their implementation and provides a way to create objects dynamically at runtime. It can be used to encapsulate object creation logic, improve code flexibility, and promote code reusability.
 
+// class Car {
+//     constructor(make, model) {
+//         this.make = make;
+//         this.model = model;
+//     }
+// }
+// class CarFactory {
+//     createCar(make, model) {
+//         return new Car(make, model);
+//     }
+// }
+// const factory = new CarFactory();
+// const car = factory.createCar('Toyota', 'Camry');
+
+
 // 19. Explain the Observer pattern and its use cases.
 // answers: The Observer pattern is a behavioral design pattern that defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically. It is commonly used to implement event handling, pub/sub systems, and data binding in applications. The Observer pattern allows objects to subscribe to and receive notifications from a subject when its state changes. It helps to decouple the subject and observers, improve code modularity, and enable loose coupling between components.
 
+// class Subject {
+//     constructor() {
+//         this.observers = [];
+//     }
+//     addObserver(observer) {
+//         this.observers.push(observer);
+//     }
+//     notifyObservers(message) {
+//         this.observers.forEach(observer => observer.update(message));
+//     }
+// }
+// class Observer {
+//     update(message) {
+//         console.log(`Observer received message: ${message}`);
+//     }
+// }
+// const subject = new Subject();
+// const observer1 = new Observer();
+// const observer2 = new Observer();
+// subject.addObserver(observer1);
+// subject.addObserver(observer2);
+// subject.notifyObservers('Hello Observers!');
+
+
 // 20. What is the Module pattern and how does it help with encapsulation ?
 // answers: The Module pattern is a design pattern that provides a way to encapsulate code into self-contained modules with private and public members. It helps to organize and structure code, prevent naming conflicts, and improve code maintainability. The Module pattern uses closures to create private variables and functions that are not accessible from outside the module. It exposes a public API that allows controlled access to the module's functionality. The Module pattern helps to achieve encapsulation, information hiding, and code organization in JavaScript applications.
+
+
+// decorators patthern
+// class Coffee {
+//     cost() {
+//         return 5;
+//     }
+// }
+// class MilkDecorator {
+//     constructor(coffee) {
+//         this.coffee = coffee;
+//     }
+//     cost() {
+//         return this.coffee.cost() + 1.5;
+//     }
+// }
+// let coffee = new Coffee();
+// coffee = new MilkDecorator(coffee);
+// console.log(coffee.cost()); // 6.5
+
 
 
 // 1. Implement Currying with Placeholders.
 // 2. Implement Deep Flatten for Arrays, Objects, and Primitives.
 // 3. Implement your custom call, apply, and bind functions.
 // 4. Execute N async tasks in series, parallel, and race.
+// // Series
+// function executeSeries(tasks) {
+//     return tasks.reduce((promise, task) => promise.then(task), Promise.resolve());
+// }
+
+// // Parallel
+// function executeParallel(tasks) {
+//     return Promise.all(tasks.map(task => task()));
+// }
+
+// // Race
+// function executeRace(tasks) {
+//     return Promise.race(tasks.map(task => task()));
+// }
+
+// // Usage example
+// const task = (i) => () => new Promise(res => setTimeout(() => res(i), 1000));
+
+// executeSeries([task(1), task(2), task(3)]).then(console.log); // [1, 2, 3]
+// executeParallel([task(1), task(2), task(3)]).then(console.log); // [1, 2, 3]
+// executeRace([task(1), task(2), task(3)]).then(console.log); // 1 (depends on which task resolves first)
+
 // 5. Build your custom Event Emitter class.
 // 6. Implement your custom native JavaScript promises.
 // 7. Memoize / cache identical API requests.
@@ -1064,17 +1193,13 @@ a - secondy
 
 
 // 1.Explain the concept of the Prototype pattern.
-// 2.What is the Decorator pattern and how is it used ?
-//3.Explain the concept of the Strategy pattern.
-// 4.What is the Command pattern and how is it used ?
-//5.Why is extending built -in JavaScript objects not a good idea ?
 //6.What is Cross - Site Scripting(XSS) and how can you prevent it ?
 // 7.Explain the concept of Cross - Site Request Forgery(CSRF) and its mitigation techniques.
 // 8.How can you prevent SQL injection vulnerabilities in JavaScript applications ?
 //9.What are some best practices for handling sensitive data in JavaScript ?
 //10.Explain the concept of Content Security Policy(CSP) and how it enhances security.
 // 11.What are some common security headers and their purpose ?
-//12.How can you prevent clickjacking attacks ?
+//12.How can you prevent clickjacking attacks?
 //13.Explain the concept of input validation and its importance in security.
 // 14.What are some tools and techniques for identifying security vulnerabilities in JavaScript code ?
 //15.How can you implement secure authentication and authorization in JavaScript applications ?
@@ -1114,6 +1239,24 @@ a - secondy
 
 // ‣ How does Shadow DOM work ?
 // ans : Shadow DOM is a web standard that allows you to encapsulate the styling and behavior of a custom element within a hidden subtree called a shadow tree. The shadow tree is separate from the main DOM tree and provides a scoped environment for the custom element's content, styles, and scripts. Shadow DOM helps to isolate the internal structure and styling of a custom element from the rest of the document, preventing style conflicts and ensuring encapsulation.
+{/* <div id="host"></div>
+
+<script>
+  let host = document.getElementById('host');
+  let shadowRoot = host.attachShadow({mode: 'open'});
+
+  shadowRoot.innerHTML = `
+    <div>
+      <slot></slot>
+    </div>
+  `;
+
+  // Insert content into the shadow DOM using slot
+  let p = document.createElement('p');
+  p.textContent = 'This content is projected into the shadow DOM!';
+  shadowRoot.appendChild(p);
+</script> */}
+
 
 // ‣ What are Web Workers and their benefits ?
 // ans:
@@ -1230,12 +1373,21 @@ a - secondy
 
 // 5. What is caching, and how does it improve performance?
 // 6. What are critical rendering paths?
+// answer: A "critical rendering path" refers to the exact sequence of steps a browser takes to convert HTML, CSS, and JavaScript code into pixels on the screen, essentially outlining the process of rendering a webpage, and optimizing this path is crucial for fast website loading times and a good user experience
+
 // 7. How do you optimize for Time to First Byte (TTFB)?
 // 8. How do service workers improve web performance?
+// ans: Service workers enhance web performance by acting as a proxy between a web application and the network, allowing developers to intercept and cache network requests, effectively serving previously downloaded resources from local storage instead of making repeated requests to the server, which significantly reduces loading times and improves user experience, particularly in poor network conditions; this also enables offline functionality by serving cached content when the user is disconnected from the internet.
 
 // • Explain the "font-variant" property.
+// ans: The "font-variant" property in CSS controls whether text is displayed in "small-caps" format, essentially converting all lowercase letters to uppercase, but with a smaller font size compared to the regular uppercase letters; essentially allowing you to apply a stylistic variation to the font without changing the font family itself.
+
 // • Use of:not selector ?
+// ans: The :not() CSS pseudo-class represents elements that do not match a list of selectors. Since it prevents specific items from being selected, it is known as the negation pseudo-class.
+
 // • What are CSS combinators ?
+// In CSS, combinators are special characters used to define the relationship between different selectors, allowing you to target specific HTML elements based on their position within the document hierarchy, such as whether they are direct children, siblings, or descendants of other elements; essentially, they help you select elements based on their relative position to each other within the HTML structure.
+
 // • Explain the "object-fit" & "object-position" CSS properties.
 // • What is the calc() CSS function?
 // • What are CSS counters ? CSS counters enable automatic counting in your styles.

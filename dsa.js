@@ -3423,15 +3423,142 @@ console.log(exist([["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "
 
 function getLongestPalindromicSubstring(s) {
 
+    let result = "";
+    let max = 1;
 
     for (var i = 0; i < s.length; i++) {
+        for (var j = i; j < s.length; j++) {
+            let subString = s.slice(i, j + 1);
+            if (subString === subString.split("").reverse().join("") && subString.length > max) {
+                result = subString;
+                max = subString.length;
+            }
+
+        }
 
     }
 
-
-
-
+    return result;
 }
 
 
 console.log(getLongestPalindromicSubstring(s));
+
+
+// Next Greater Element(NGE) for every element in given Array
+
+const nextGreaterElement = (arr) => {
+    let stack = [];
+    let result = [];
+    for (let i = arr.length - 1; i >= 0; i--) {
+        while (stack.length && stack[stack.length - 1] <= arr[i]) {
+            stack.pop();
+        }
+        if (stack.length) {
+            result.unshift(stack[stack.length - 1]);   // remove top element from stack and add to result
+        } else {
+            result.unshift(-1);
+        }
+        stack.push(arr[i]);   // add current element to stack
+    }
+    return result;
+};
+
+const arr = [4, 5, 2, 10, 8];
+console.log(nextGreaterElement(arr)); // output [ 5, 10, 10, -1, -1 ]
+
+// Delete middle element of a stack
+// Input: Stack[] = [1, 2, 3, 4, 5]
+// Output: Stack[] = [1, 2, 4, 5]
+
+
+function deleteMiddleElement(stack, n, current) {
+    if (stack.length == 0 || current == n)
+        return;
+    var x = stack.pop();
+    console.log("deleteMiddleElement", stack, current);
+    deleteMiddleElement(stack, n, current + 1);
+
+    if (current != Math.floor(n / 2)) stack.push(x);
+
+    console.log("deleteMiddleElementAfter", stack, current);
+
+}
+
+// Driver code
+var stack = [1, 2, 3, 4, 5];
+deleteMiddleElement(stack, stack.length, 0);
+console.log(stack);
+
+
+let arr1 = [1, 12, 15, 26, 38];
+let arr2 = [2, 13, 17, 30, 45, 60];
+
+// median of the two arrays
+
+// function median(arr1, arr2) {
+//   let arr = arr1.concat(arr2).sort((a, b) => a - b);
+//   let mid = Math.floor(arr.length / 2);
+//   return arr.length % 2 === 0 ? (arr[mid] + arr[mid - 1]) / 2 : arr[mid];
+// }
+
+// console.log(median(arr1, arr2));
+
+
+// suggest by binory searching
+function median(arr1, arr2) {
+    if (arr1.length > arr2.length) {
+        return median(arr2, arr1);
+    }
+    let x = arr1.length;
+    let y = arr2.length;
+    let low = 0;
+    let high = x;
+    while (low <= high) {
+        let partitionX = Math.floor((low + high) / 2);
+        let partitionY = Math.floor((x + y + 1) / 2) - partitionX; // +1 is added to handle both odd and even length of the array
+
+        let maxX = partitionX === 0 ? Number.NEGATIVE_INFINITY : arr1[partitionX - 1];
+        let minX = partitionX === x ? Number.POSITIVE_INFINITY : arr1[partitionX];
+
+        let maxY = partitionY === 0 ? Number.NEGATIVE_INFINITY : arr2[partitionY - 1];
+        let minY = partitionY === y ? Number.POSITIVE_INFINITY : arr2[partitionY];
+        console.log(`maxX: Top ${maxX} + minX: ${minX}, maxY : ${maxY}, minY: ${minY}`, maxX <= minY && maxY <= minX, low, "low", high, "high");
+        if (maxX <= minY && maxY <= minX) {
+            console.log("maxX: " + maxX, " + minX + ", minX, ", maxY, minY: " + minY);
+            if ((x + y) % 2 === 0) {
+                return (Math.max(maxX, maxY) + Math.min(minX, minY)) / 2;
+            } else {
+                return Math.max(maxX, maxY);
+            }
+        } else if (maxX > minY) {
+            high = partitionX - 1;
+        } else {
+            low = partitionX + 1;
+        }
+    }
+}
+
+console.log(median(arr1, arr2));
+// Time complexity is O(log(min(x, y)))
+// Space complexity is O(1)
+
+
+// Find the kth smallest / largest element in an array
+
+function kthSmallest(arr, k) {
+    arr.sort((a, b) => a - b);
+    return arr[k - 1];
+}
+
+const arr = [7, 10, 4, 3, 20, 15];
+
+console.log(kthSmallest(arr, 3)); // 7
+
+
+function kthLargest(arr, k) {
+    arr.sort((a, b) => b - a);
+    return arr[k - 1];
+}
+
+console.log(kthLargest(arr, 3)); // 10

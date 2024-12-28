@@ -287,3 +287,51 @@
 // Write a query to identify and remove duplicate records in a table.
 // Explain how to handle NULL values in your data.
 // Describe how to validate data integrity during data import.
+
+
+
+// What is SQL ?
+// What are the different types of SQL statements ?
+// What is a primary key ?
+// What is a foreign key ?
+// What are joins ? Explain the different types of joins.
+// What is normalization ? Explain the different normal forms.
+// What is denormalization ?
+// What is a candidate key ?
+// What is a composite key ?
+// What is a unique key ?
+// What is an index ? What are the different types of indexes ?
+// What is a view ? How is it different from a table ?
+// What is a stored procedure ?
+// What is a trigger ?
+// What is a subquery ? What are the different types of subqueries ?
+// What is a correlated subquery ?
+// What is a UNION operator ? How does it differ from UNION ALL ?
+// What is a constraint ? Explain different types of constraints.
+// What is ACID in the context of a database transaction ?
+// What is the difference between DELETE and TRUNCATE statements ?
+// What is the difference between WHERE and HAVING clauses ?
+// What is the difference between GROUP BY and ORDER BY ?
+// What is a self - join ?
+// What is a cross join ?
+// What are aggregate functions in SQL ? Name a few.
+// What is a schema in SQL ?
+// What are SQL injection attacks ? How can they be prevented ?
+// What is the difference between clustered and non - clustered indexes ?
+// What is a cursor in SQL ?
+// What are the different types of relationships in databases ?
+// What is the difference between RANK() and DENSE_RANK() functions ?
+// What is the difference between a local and a global temporary table ?
+// How do you optimize a SQL query ?
+// What is the difference between a LEFT JOIN and a LEFT OUTER JOIN ?
+// What is a database trigger and what are its types ?
+// What is the purpose of the COALESCE function?
+// How do you handle NULL values in SQL ?
+// What is the difference between INNER JOIN and OUTER JOIN ?
+// What is a transaction log and what is its purpose ?
+// Explain the concept of referential integrity.
+// What is the difference between a DELETE statement and a TRUNCATE statement ?
+// What are the differences between OLTP and OLAP systems ?
+// What is the purpose of the EXISTS clause in SQL ?
+// What is a materialized view ?
+// What are the differences between SQL and NoSQL databases ?
