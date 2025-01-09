@@ -3,7 +3,7 @@
 The singleton design pattern is used in scenarios when we need exactly one instance of an interface (class or function).
 In a singleton design pattern, only one object is created for each interface (class or function) and the same object is returned every time when called.
 
-singleton interface (class or function) ensures that it creates only one instance, provides a global access point to the state, 
+singleton interface (class or function) ensures that it creates only one instance, provides a global access point to the state,
 and makes sure that the instance is only created the first time.
 
 💡Use Cases :-

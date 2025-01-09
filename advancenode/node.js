@@ -4,6 +4,7 @@
 
 // 1. What is Node.js ?
 // ans:Node.js is an open-source, cross-platform runtime environment that allows developers to run JavaScript code outside of a web browser. It is based on the V8 JavaScript engine, which is the same engine used by Google Chrome. Node.js is designed to build scalable network applications and is used for developing server-side applications.
+
 // 2. What is the difference between Node.js and JavaScript ?
 // ans:Node.js is a runtime environment that allows developers to run JavaScript code outside of a web browser, while JavaScript is a scripting language that is used to create interactive and dynamic websites. Node.js is built on the V8 JavaScript engine, which is the same engine used by Google Chrome. Node.js is used for developing server-side applications, while JavaScript is used for client-side scripting.
 
@@ -135,11 +136,8 @@
 //     console.log(`Message from child process: ${message}`);
 // });
 
-
-
 // 27. Explain the use of the passport module in Node.js.
 // ans:The passport module in Node.js is a popular authentication middleware that provides a way to authenticate users in web applications. The passport module supports multiple authentication strategies, such as local authentication, OAuth, and OpenID, and allows developers to easily integrate authentication into their applications. The passport module is widely used in Node.js applications to handle user authentication and authorization.
-
 
 // 28. What is fork in Node.js ?
 // ans:fork() is a method in the child_process module that is used to create a new process that runs a Node.js module. The fork() method is similar to the spawn() method, but is specifically designed to create child processes that run Node.js applications. The fork() method is commonly used to create child processes that run Node.js applications in a separate process.
@@ -163,6 +161,7 @@
 // ssl full form: Secure Sockets Layer
 
 // tls full form: Transport Layer Security
+
 // 33. What is a cluster in Node.js ?
 // ans:A cluster in Node.js is a module that allows developers to create multiple instances of a Node.js application that can run concurrently. Clustering is used to take advantage of multi-core systems and improve the performance and scalability of Node.js applications. Clustering allows Node.js applications to handle multiple requests concurrently by distributing the workload across multiple processes.
 
@@ -224,8 +223,103 @@
 // 41. Differentiate between process.nextTick() and setImmediate()?
 // ans:process.nextTick() and setImmediate() are used to schedule the execution of a callback function. The difference between them is that process.nextTick() is used to schedule a callback function to be invoked in the next iteration of the event loop, after the current operation is completed, regardless of the current phase of the event loop. On the other hand, setImmediate() is used to schedule a callback function to be invoked in the next iteration of the event loop, after the current operation is completed, but before any I/O events are triggered.
 
+// what is event emitter function in node.js?
+// ans: The EventEmitter class in Node.js is a core module that provides a way to handle events in a Node.js application. The EventEmitter class allows developers to create custom events, emit events, and listen for events in a Node.js application. The EventEmitter class is commonly used in Node.js applications to implement event-driven programming and handle asynchronous operations.
+
+// example
+// const EventEmitter = require('events');
+
+// class MyEmitter extends EventEmitter {}
+
+// const myEmitter = new MyEmitter();
+
+// myEmitter.on('event', () => {
+//     console.log('an event occurred!');
+//});
+// myEmitter.emit('event');
+// Output: an event occurred!
 
 
+
+
+// 42. What is the use of the util module in Node.js ?
+// ans:The util module in Node.js provides utility functions that are commonly used in Node.js applications. The util module includes functions such as util.inherits(), util.promisify(), and util.format() that provide a way to work with objects, functions, and strings in a Node.js application. The util module is commonly used in Node.js applications to perform common tasks such as inheritance, promisification, and string formatting.
+
+
+// 43. What is the use of the path module in Node.js ?
+// ans:The path module in Node.js provides a way to work with file paths and directories in a Node.js application. The path module includes functions such as path.join(), path.resolve(), and path.basename() that allow developers to manipulate file paths, resolve relative paths, and extract file names from paths. The path module is commonly used in Node.js applications to work with file paths and directories.
+
+
+// what is asynchronous and synchronous functions in fs?
+// ans: The fs module in Node.js provides functions for working with the file system. The fs module includes both synchronous and asynchronous functions for reading, writing, and manipulating files. Synchronous functions block the execution of code until the operation is completed, while asynchronous functions allow the code to continue executing without waiting for the operation to complete. Asynchronous functions are commonly used in Node.js to perform I/O operations, such as reading files or making network requests, without blocking the execution of code.
+
+// example
+// const fs = require('fs');
+
+// // Synchronous function
+// const data = fs.readFileSync('file.txt');
+// console.log(data.toString());
+
+// // Asynchronous function
+// fs.readFile('file.txt', (err, data) => {
+//     if (err) throw err;
+//     console.log(data.toString());
+// });
+
+
+// what is monolithic and microservices architecture in node.js?
+// ans: Monolithic architecture is a traditional architecture style where all the components of an application are tightly coupled and run as a single unit. In a monolithic architecture, the entire application is built as a single unit, and all the components are deployed together. Monolithic architectures are simple to develop and deploy but can be difficult to scale and maintain as the application grows.
+
+// Microservices architecture is a modern architecture style where an application is built as a collection of small, independent services that communicate with each other over a network. In a microservices architecture, each service is responsible for a specific function or feature of the application and can be developed, deployed, and scaled independently. Microservices architectures are flexible, scalable, and easy to maintain but can be complex to develop and deploy.
+
+// example
+// Monolithic architecture: A traditional e-commerce application where all the components, such as the front-end, back-end, and database, are tightly coupled and run as a single unit.
+
+// Microservices architecture: An e-commerce application built as a collection of small, independent services, such as product service, order service, and payment service, that communicate with each other over a network.
+
+// what is Worker Threads in Node.js?
+// ans: Worker Threads in Node.js are a feature that allows developers to run JavaScript code in separate threads to take advantage of multi-core systems and improve the performance of Node.js applications. Worker Threads provide a way to create and manage threads in a Node.js application, allowing developers to run CPU-intensive tasks, perform parallel processing, and handle multiple requests concurrently. Worker Threads are commonly used in Node.js applications to improve performance and scalability by running code in separate threads.
+
+// example
+
+// const { Worker, isMainThread, parentPort } = require('worker_threads');
+
+// if (isMainThread) {
+//     const worker = new Worker(__filename);
+//     worker.on('message', (message) => {
+//         console.log(`Message from worker: ${message}`);
+//     });
+//     worker.postMessage('Hello from main thread!');
+// } else {
+//     parentPort.on('message', (message) => {
+//         console.log(`Message from main thread: ${message}`);
+//         parentPort.postMessage('Hello from worker thread!');
+//     });
+// }
+
+
+// what is thread pool in node.js?
+// ans: The thread pool in Node.js is a feature that allows developers to run JavaScript code in separate threads to take advantage of multi-core systems and improve the performance of Node.js applications. The thread pool manages a pool of worker threads that can be used to run CPU-intensive tasks, perform parallel processing, and handle multiple requests concurrently. The thread pool is commonly used in Node.js applications to improve performance and scalability by running code in separate threads.
+
+// example
+// const crypto = require('crypto');
+// const start = Date.now();
+
+// crypto.pbkdf2('password', 'salt', 100000, 512, 'sha512', () => {
+//     console.log('1:', Date.now() - start);
+// });
+
+// crypto.pbkdf2('password', 'salt', 100000, 512, 'sha512', () => {
+//     console.log('2:', Date.now() - start);
+// });
+
+// crypto.pbkdf2('password', 'salt', 100000, 512, 'sha512', () => {
+//     console.log('3:', Date.now() - start);
+// });
+
+
+// what is Libuv in Node.js?
+// ans: Libuv is a multi-platform support library in Node.js that provides asynchronous I/O operations, event loop, and thread pool management. Libuv is used by Node.js to handle asynchronous operations, such as file I/O, network requests, and timers, in a non-blocking manner. Libuv abstracts the underlying operating system interfaces and provides a consistent API for handling I/O operations in a Node.js application.
 
 
 

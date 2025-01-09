@@ -220,7 +220,6 @@ a - secondy
   // how does Js handling memory ?
   // ans = JavaScript uses automatic memory management through garbage collection to manage memory allocation and deallocation. The JavaScript engine allocates memory for objects and variables dynamically and automatically frees up memory when it is no longer needed. Garbage collection identifies and removes unused objects to prevent memory leaks and optimize memory usage.
 
-
   // What are synthetic events in React ? and use?
   // Synthetic events are the objects which act as a cross-browser wrapper around the browser’s native event. They combine the behavior of different browsers into one API. This is done to make sure that the events show consistent properties across different browsers.
 
@@ -232,6 +231,9 @@ a - secondy
   // Ease of Use: They provide a simple and uniform way to handle events in your React applications.
 
   // React uses the event delegation technique to listen to events at the root level and then it delegates the responsibility of handling the events to the respective components. This is done to improve the performance of the application.
+
+  // what is BOM?
+  // ans = The Browser Object Model (BOM) is a set of APIs provided by the browser to interact with the browser window and its components. The BOM allows you to manipulate the browser window, control the browser history, and interact with the user's device. The BOM is not standardized and varies between different browsers.
 
 
 
@@ -1057,6 +1059,7 @@ a - secondy
 // 13. What are some best practices for writing maintainable and effective tests in JavaScript ?
 // 14. Explain the concept of code coverage and how it can be used to assess test quality.
 // 15. What are some tools that can be used for JavaScript testing ?
+
 // 16. What are design patterns and why are they useful ?
 // answers: Design patterns are reusable solutions to common problems in software design. They provide a structured approach to solving design and implementation challenges and help developers create scalable, maintainable, and efficient code. Design patterns help to standardize best practices, improve code quality, and promote code reusability. They provide a common language and framework for discussing and implementing solutions to common software design problems.
 
@@ -1233,7 +1236,6 @@ a - secondy
 // ‣ How do you implement a responsive grid in HTML5 ?
 // ans : To implement a responsive grid in HTML5, you can use CSS frameworks like Bootstrap, Foundation, or CSS Grid Layout. These frameworks provide pre-defined grid systems with responsive classes and utilities that allow you to create responsive layouts for different screen sizes and devices.
 
-// ‣ localStorage vs.sessionStorage ?
 // ‣ What are Web Components and how to create one ?
 // ans : Web Components are a set of web platform APIs that allow you to create reusable custom elements with encapsulated functionality and styling. Web Components consist of four main technologies: Custom Elements, Shadow DOM, HTML Templates, and HTML Imports.
 
@@ -1432,3 +1434,56 @@ a - secondy
 //  22. How would you design a distributed cache system ?
 //   23. How would you design a rate limiter for an API ?
 // 24. How would you design an online marketplace, similar to Amazon or Flipkart ?
+
+
+
+// What are render props, and how are they used ?
+// ans: Render props is a design pattern in React that allows you to pass a function as a prop to a component, enabling the component to render its children using the function. This pattern is commonly used to share code and logic between components, allowing for greater flexibility and reusability in React applications. By passing a function as a prop, you can control what is rendered within the component and provide dynamic behavior based on the function's output.
+
+
+// Explain the concept of higher-order components(HOCs).How do they differ from render props ?
+// ans: Higher-order components(HOCs) are functions that take a component as an argument and return a new component with enhanced functionality. HOCs are used to add features, behaviors, or data to existing components without modifying their original structure. They are commonly used for code reuse, logic abstraction, and cross-cutting concerns in React applications. HOCs differ from render props in that they wrap components with additional functionality, while render props pass a function as a prop to control what is rendered within a component.
+
+// What are the differences between React and React Native?
+// ans: React is a JavaScript library for building user interfaces on the web, while React Native is a framework for building cross-platform mobile applications using JavaScript and React. React is used for web development, while React Native is used for mobile app development. React components are rendered to the DOM, while React Native components are rendered to native UI elements on iOS and Android devices. React uses HTML and CSS for styling, while React Native uses platform-specific components and styles for mobile apps.
+
+// Explain the concept of React Fiber.How does it improve upon the older reconciliation algorithm?
+// ans: React Fiber is a complete rewrite of the React core algorithm that introduces a new reconciliation engine to improve performance, scheduling, and rendering in React applications. Fiber is designed to be more incremental, interruptible, and prioritized, allowing React to break down rendering work into smaller units and prioritize updates based on their importance. Fiber enables React to perform asynchronous rendering, handle complex component trees, and support new features like Suspense and concurrent mode, improving the user experience and performance of React applications.
+
+
+// How does the useReducer hook work, and when would you use it instead of useState ?
+// ans: React is a complete rewrite of the React core algorithm that introduces a new reconciliation engine to improve performance, scheduling, and rendering in React applications. Fiber is designed to be more incremental, interruptible, and prioritized, allowing React to break down rendering work into smaller units and prioritize updates based on their importance. Fiber enables React to perform asynchronous rendering, handle complex component trees, and support new features like Suspense and concurrent mode, improving the user experience and performance of React applications.
+
+// How do you handle authentication and authorization in a React application ?
+// ans: Authentication and authorization in a React application can be handled using techniques like JSON Web Tokens(JWT), cookies, session storage, and third-party authentication providers like OAuth or OpenID Connect. You can implement user authentication by storing user credentials securely, validating user input, and generating tokens for authenticated users. You can implement user authorization by defining roles, permissions, and access controls for different user types, restricting access to protected routes or resources based on user privileges.
+
+// Explain the concept of lazy loading components in React.How do you implement it ?
+// What is the purpose of React.StrictMode, and how does it help in development ?
+// What is React Profiler, and how do you use it to diagnose performance issues ?
+// Explain how to use the useImperativeHandle hook.Provide a use case example.
+// What are the differences between useEffect and useLayoutEffect hooks ? When would you use one over the other ?
+// How do you manage side effects in React applications using libraries like redux-thunk or redux - saga ?
+// Explain the concept of a reconciliation algorithm in React.How does React determine when to re - render components ?
+// How do you handle data fetching in a React application ? Discuss the different approaches and their trade - offs.
+// What are some common pitfalls when using React hooks, and how can you avoid them?
+// How do you test React components ? Discuss the different types of tests(unit, integration, end - to - end) and the tools you use.
+// What is React Concurrent Mode, and how does it improve the user experience ?
+// Explain the Suspense component in React and how it works with asynchronous operations.
+// How do you handle internationalization(i18n) in a React application ?
+// What are micro - frontends, and how can you implement them in a React application ?
+// How do you handle real - time data and WebSockets in a React application ?
+// How do you ensure accessibility(a11y) in your React applications ?
+// Explain the concept of immutable data and how it relates to React's performance optimizations.
+// How do you handle form validation in React ? Discuss libraries like Formik and React Hook Form.
+// What are the benefits and drawbacks of using TypeScript with React ?
+// How do you handle file uploads in a React application ?
+// What is the difference between client - side and server - side rendering, and when should you use each?
+// Explain how to integrate GraphQL with a React application.
+// How do you handle component composition in React ? Provide examples.
+// What are some strategies for managing large - scale React applications ?
+// Explain how to create a reusable component library in React.
+// What are some best practices for structuring a React project ?
+// How do you use the React DevTools extension for debugging ?
+// How do you handle state synchronization between multiple components ?
+// How do you handle error logging and monitoring in a React application ?
+// Explain the concept of server components in React and how they differ from client components

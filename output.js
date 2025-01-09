@@ -3,6 +3,32 @@ https://plainenglish.io/blog/50-javascript-output-questions
 // Question: What is typeof []
 // Answer: Object. Actually Array is derived from Object. If you want to check array use Array.isArray(arr)
 
+// ----------------------------
+// var a = 10;
+// function chnage(a) {
+//   a = 80
+// }
+// // console.log(a)
+
+// if (a < 40) {
+//   a = 40;
+//   chnage(a)
+// }
+
+// console.log(a)
+// ----------------------------------------
+
+// var a = 10;
+// // console.log(a)
+
+// if (a < 40) {
+//   a = 40;
+//   var a = 80;
+// }
+
+// console.log(a)
+// ------------------------
+
 // Question: What is typeof arguments
 // Answer: Object. arguments are array like but not array. it has length, can access by index but can't push pop, etc.
 

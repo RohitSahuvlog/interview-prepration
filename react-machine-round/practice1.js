@@ -30,3 +30,6 @@ https://github.com/sanchit0496/reactjs-machine-coding-challenges?trk=public_post
 // 14. Build an Infinite Scroll Component: Develop a component that loads more data as the user scrolls down the page.
 
 // 15. Create a Quiz Application: Develop a quiz application where users can answer multiple - choice questions and see their score at the end.
+
+
+// 16. INTERACTIVE DIAGONAL GRID
