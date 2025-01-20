@@ -925,7 +925,6 @@ function DSA21() {
                 }
             }
             if (j === a.length) {
-                // element not found
                 return false;
             }
         }
@@ -1684,26 +1683,32 @@ function DSA40() {
 function DSA41() {
     const str = "ABC";
 
-    function findPermutations(s) {
-        if (s.length < 2) {
-            return s;
+    function recurPermute(index, s, ans) {
+        // Base Case
+        if (index === s.length) {
+            ans.add(s.join(""));
+            return;
         }
-
-        let permutationArray = [];
-
-        for (let i = 0; i < s.length; i++) {
-            let char = s[i]; // A
-            let remainingChar = s.slice(0, i) + s.slice(i + 1, s.length); // BC
-
-            for (let permutation of findPermutations(remainingChar)) {
-                // BC
-                // CB
-                permutationArray.push(char + permutation); // ["ABC", "ACB"];
-            }
+        for (let i = index; i < s.length; i++) {
+            [s[index], s[i]] = [s[i], s[index]];
+            recurPermute(index + 1, s, ans);
+            [s[index], s[i]] = [s[i], s[index]];
         }
-        return permutationArray;
     }
-    console.log(findPermutations(str));
+
+    // Function to find all unique permutations
+    function findPermutation(s) {
+
+        // sort input string
+        s = s.split("").sort();
+
+        // Stores all unique permutations
+        let res = new Set();
+        recurPermute(0, s, res);
+
+        // Convert Set to Array for the final answer
+        return Array.from(res).sort();
+    }
 }
 // DSA41();
 
@@ -2189,7 +2194,7 @@ function DSA54() {
     let j = 0;
 
     for (let i = 0; i < arr.length; i++) {
-        if (arr[j] === item) {
+        if (arr[j] === item) { // if item found then remove it and add at end
             if (arr[i] !== item) {
                 [arr[i], arr[j]] = [arr[j], arr[i]];
                 j++;

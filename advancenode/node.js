@@ -74,7 +74,7 @@
 // 19. What is buffer in Node.js ?
 // ans:A buffer in Node.js is a temporary storage area used to store binary data. Buffers are used to work with binary data in Node.js and provide a way to read, write, and manipulate binary data. Buffers are similar to arrays of integers but are designed to handle binary data more efficiently.
 
-// 20. What are streams in Node.js ?
+// 20. What are streams in Node.js?
 // ans:Streams in Node.js are used to handle data transfer in an efficient and scalable way. Streams provide a way to read and write data in chunks, allowing applications to process data as it is received or sent. Streams can be used to read data from a file, write data to a file, or transfer data over a network. Node.js provides four types of streams: Readable, Writable, Duplex, and Transform.
 
 // example of streams in Node.js
@@ -320,6 +320,10 @@
 
 // what is Libuv in Node.js?
 // ans: Libuv is a multi-platform support library in Node.js that provides asynchronous I/O operations, event loop, and thread pool management. Libuv is used by Node.js to handle asynchronous operations, such as file I/O, network requests, and timers, in a non-blocking manner. Libuv abstracts the underlying operating system interfaces and provides a consistent API for handling I/O operations in a Node.js application.
+
+
+// how can rate the limit in node.js?
+// ans: Rate limiting in Node.js can be implemented using middleware such as express-rate-limit, which provides a way to limit the number of requests that can be made to a server in a specific time period. Express-rate-limit allows developers to set limits on the number of requests per IP address, per route, or per user, and provides options to customize the rate limit settings. Rate limiting is commonly used in Node.js applications to prevent abuse, protect against denial-of-service attacks, and ensure the stability and performance of the server.
 
 
 

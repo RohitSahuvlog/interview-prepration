@@ -2,10 +2,8 @@
 // What is MongoDB, and how is it different from traditional relational databases?
 // ans: MongoDB is a NoSQL database that stores data in flexible, JSON-like documents. It is different from traditional relational databases in that it does not require a fixed schema, uses a flexible data model, and is designed to scale horizontally across multiple servers.
 
-
 // Explain the concept of NoSQL. How does MongoDB fit into the NoSQL ecosystem?
 // ans : NoSQL stands for "Not Only SQL" and refers to databases that use non-tabular data models and do not require a fixed schema. MongoDB fits into the NoSQL ecosystem by using a flexible document data model that allows for easy scalability and high performance.
-
 
 // What is a document in MongoDB, and how is it structured?
 // ans: A document in MongoDB is a JSON-like data structure that stores data in key-value pairs. It is similar to a row in a relational database table but does not require a fixed schema. Documents can contain nested fields, arrays, and other complex data types.
@@ -87,3 +85,51 @@
 // Explain how to use change streams to monitor data changes in MongoDB.
 // How would you set up a MongoDB sharded cluster?
 // Explain the role and configuration of journaling in MongoDB.
+
+// General MongoDB Concepts
+// What is MongoDB, and how does it differ from traditional relational databases like MySQL or PostgreSQL?
+// Explain the CAP theorem. How does MongoDB align with it?
+// What are the advantages and disadvantages of using MongoDB?
+// What is a document in MongoDB, and how is it structured?
+// Can you explain the difference between a collection and a database in MongoDB?
+// Data Modeling
+// What is the difference between embedding and referencing in MongoDB? When would you use each?
+// How does MongoDB handle relationships between data compared to relational databases?
+// What are the common schema design patterns used in MongoDB?
+// What is sharding, and how does it affect schema design in MongoDB?
+// What considerations should you make when designing a schema for a large-scale application in MongoDB?
+// Indexing and Performance
+// What is an index in MongoDB? How does it improve query performance?
+// What are some common types of indexes available in MongoDB?
+// What are the limitations or disadvantages of using too many indexes?
+// What is a compound index, and when would you use it?
+// How does MongoDB handle duplicate indexes?
+// Querying and Aggregation
+// How does the MongoDB aggregation framework work? Provide an example use case.
+// What is the $lookup operator used for in the aggregation framework?
+// Explain the difference between find() and the aggregation framework in MongoDB.
+// How does MongoDB handle queries on deeply nested documents?
+// What is the purpose of the $unwind operator?
+// Replication and Sharding
+// What is replication in MongoDB? Why is it important?
+// Explain the role of the primary and secondary nodes in a MongoDB replica set.
+// What is the difference between replication and sharding?
+// What is a shard key, and why is it important in MongoDB sharding?
+// How does MongoDB handle data distribution in a sharded cluster?
+// Administration and Configuration
+// How do you ensure data consistency in MongoDB?
+// What are the various backup strategies for MongoDB databases?
+// What are MongoDB transactions, and when would you use them?
+// How does MongoDB handle security? What measures can you take to secure your database?
+// What are the most common performance tuning techniques in MongoDB?
+// Miscellaneous
+// What is the WiredTiger storage engine? How does it differ from other storage engines in MongoDB?
+// What are MongoDB’s limitations for large-scale applications?
+// How does MongoDB handle schema evolution?
+// Explain the difference between updateOne() and updateMany().
+// How does MongoDB handle data types like dates, arrays, and binary data?
+// What is the difference between the $set and $push operators in MongoDB?
+// What is a capped collection, and when would you use it?
+// How does MongoDB ensure ACID compliance in transactions?
+// What is the difference between NoSQL and SQL databases, and why would you choose MongoDB over an SQL database?
+// Explain MongoDB’s use cases in real-world applications. What types of projects are best suited for MongoDB?
